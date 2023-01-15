@@ -18,6 +18,7 @@ All the parts are or will be stocked at Tindie!
 
 - [Concept](#concept)
 - [Parts](#parts)
+- [Sources](#sources)
 - [Donations](#donations)
 - [License](#license)
 
@@ -29,6 +30,10 @@ Testo
 
 Ultra
 
+## Sources
+
+- [ESP32-S2-WROVER step file](https://grabcad.com/library/esp32-s2-wrover-1)
+
 ## Donations
 
 **If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
@@ -36,4 +41,3 @@ Ultra
 ## License
 
  <a rel="CClicense" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.
-
