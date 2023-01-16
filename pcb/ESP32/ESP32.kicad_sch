@@ -2336,7 +2336,6 @@
     )
   )
 
-
   (junction (at 303.53 25.4) (diameter 0) (color 0 0 0 0)
     (uuid 000655d0-0626-43a8-b83b-41fb12a1118d)
   )
@@ -5074,14 +5073,14 @@
     (in_bom yes) (on_board yes)
     (uuid 44529544-e222-4b78-856f-d2f85989a09d)
     (property "Reference" "J19" (id 0) (at 36.83 137.16 0))
-    (property "Value" "XUNPU TYPEC-304S-ACP16 " (id 1) (at 24.13 156.21 90))
-    (property "Footprint" "MeineBib:USB_C_Receptacle_XUNPU_TYPEC-304S-ACP16" (id 2) (at 40.64 156.21 0)
+    (property "Value" "XUNPU TYPEC-304-ACP16 " (id 1) (at 24.13 156.21 90))
+    (property "Footprint" "MeineBib:USB_C_Receptacle_XUNPU_TYPEC-304-ACP16" (id 2) (at 40.64 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "https://www.usb.org/sites/default/files/documents/usb_type-c.zip" (id 3) (at 40.64 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "LCSC" "C720630" (id 4) (at 36.83 156.21 0)
+    (property "LCSC" "C2982555" (id 4) (at 36.83 156.21 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "A1" (uuid 2b97a705-7dc3-4425-8a4e-884d5dac93b4))
@@ -7155,7 +7154,7 @@
       (reference "J18") (unit 1) (value "GND") (footprint "MeineBib:Board-Board-1mmEdge-2,54mm")
     )
     (path "/44529544-e222-4b78-856f-d2f85989a09d"
-      (reference "J19") (unit 1) (value "XUNPU TYPEC-304S-ACP16 ") (footprint "MeineBib:USB_C_Receptacle_XUNPU_TYPEC-304S-ACP16")
+      (reference "J19") (unit 1) (value "XUNPU TYPEC-304-ACP16 ") (footprint "MeineBib:USB_C_Receptacle_XUNPU_TYPEC-304-ACP16")
     )
     (path "/ac9b4c2e-78c2-4311-8e0c-b7521804c0b6"
       (reference "J20") (unit 1) (value "Conn_01x10") (footprint "Connector_PinHeader_2.54mm:PinHeader_1x10_P2.54mm_Vertical")
