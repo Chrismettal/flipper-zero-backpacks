@@ -20,6 +20,7 @@
 //-----------------------------------------------------------------------------
 // General
 #include <Arduino.h>
+#include "USB.h"
 // SD Card
 #include "FS.h"
 #include "SD.h"
@@ -29,12 +30,14 @@
 #include <WiFiClient.h>
 #include <WiFiAP.h>
 
+
 //-----------------------------------------------------------------------------
 //  Constants
 //-----------------------------------------------------------------------------
 // GPIOs
-#define PIN_FIRST_LED       4
-#define PIN_LAST_LED        6
+#define PIN_LED_R           6
+#define PIN_LED_G           5
+#define PIN_LED_B           4
 #define PIN_I2C_PULLUP      3
 #define PIN_LPUART_RX       17
 #define PIN_LPUART_TX       18
@@ -50,12 +53,12 @@ const char *PASS          = "SelftestAP";
 //-----------------------------------------------------------------------------
 bool singleResult;
 bool overallResult;
-
+USBCDC USBSerial;
 
 //-----------------------------------------------------------------------------
 //  Macros
 //-----------------------------------------------------------------------------
-#define SERIAL_DIVIDER Serial.println("----------------------------------------")
+#define SERIAL_DIVIDER USBSerial.println("----------------------------------------")
 
 
 //-----------------------------------------------------------------------------
@@ -66,18 +69,34 @@ void setup() {
   //---------------------------------------------------------------------------
   //  Serial
   //---------------------------------------------------------------------------
-  Serial.begin(115200);
+
+  USBSerial.enableReboot(HIGH);  
+  USBSerial.begin(115200);
+  USB.begin();
+
+  // wait for serial connection
+  while (!USBSerial){;}
+  USBSerial.println("Hoi!");
+  delay(1000);
+
+
   SERIAL_DIVIDER;
-  Serial.println("ESP32 backpack starting self test..");
+  USBSerial.println("ESP32 backpack starting self test..");
   SERIAL_DIVIDER;
+
+  delay(1000);
 
   //---------------------------------------------------------------------------
   //  GPIO setup
   //---------------------------------------------------------------------------
   // LEDs
-  for (int led = PIN_FIRST_LED; led <= PIN_LAST_LED; led++) {
-    pinMode(led, OUTPUT);
-  }
+  pinMode(PIN_LED_R, OUTPUT);
+  pinMode(PIN_LED_B, OUTPUT);
+  pinMode(PIN_LED_G, OUTPUT);
+  analogWrite(PIN_LED_R, MAX_PWM);
+  analogWrite(PIN_LED_G, MAX_PWM);
+  analogWrite(PIN_LED_B, MAX_PWM);
+
 
   // I2C
   pinMode(PIN_I2C_PULLUP, OUTPUT);
@@ -96,52 +115,52 @@ void setup() {
   //-----------------------------------
   // Test for low pullups
   SERIAL_DIVIDER;
-  Serial.println("Starting I2C pin selftests");
-  Serial.println("Disabling pullups");
+  USBSerial.println("Starting I2C pin selftests");
+  USBSerial.println("Disabling pullups");
   digitalWrite(PIN_I2C_PULLUP, LOW);
   delay(50);
 
   singleResult = HIGH;
 
   if (!digitalRead(PIN_LPUART_RX)) {
-    Serial.println("OK  - GPIO_17 (LPUART_RX) low");
+    USBSerial.println("OK  - GPIO_17 (LPUART_RX) low");
   } else {
-    Serial.println("BAD - GPIO_17 (LPUART_RX) stuck high");
+    USBSerial.println("BAD - GPIO_17 (LPUART_RX) stuck high");
     singleResult = LOW;
   }
 
   if (!digitalRead(PIN_LPUART_TX)) {
-    Serial.println("OK  - GPIO_18 (LPUART_TX) low");
+    USBSerial.println("OK  - GPIO_18 (LPUART_TX) low");
   } else {
-    Serial.println("BAD - GPIO_18 (LPUART_TX) stuck high");
+    USBSerial.println("BAD - GPIO_18 (LPUART_TX) stuck high");
     singleResult = LOW;
   }
 
   // Test for high pullups
-  Serial.println("Enabling pullups");
+  USBSerial.println("Enabling pullups");
   digitalWrite(PIN_I2C_PULLUP, HIGH);
   delay(50);
 
   if (digitalRead(PIN_LPUART_RX)) {
-    Serial.println("OK  - GPIO_17 (LPUART_RX) high");
+    USBSerial.println("OK  - GPIO_17 (LPUART_RX) high");
   } else {
-    Serial.println("BAD - GPIO_17 (LPUART_RX) stuck low");
+    USBSerial.println("BAD - GPIO_17 (LPUART_RX) stuck low");
     singleResult = LOW;
   }
 
   if (digitalRead(PIN_LPUART_TX)) {
-    Serial.println("OK  - GPIO_18 (LPUART_TX) high");
+    USBSerial.println("OK  - GPIO_18 (LPUART_TX) high");
   } else {
-    Serial.println("BAD - GPIO_18 (LPUART_TX) stuck low");
+    USBSerial.println("BAD - GPIO_18 (LPUART_TX) stuck low");
     singleResult = LOW;
   }
 
   // Print individual result
   SERIAL_DIVIDER;
   if (singleResult) {
-    Serial.println("OK  - I2C Pullup tests OK!");
+    USBSerial.println("OK  - I2C Pullup tests OK!");
   } else {
-    Serial.println("BAD - I2C Pullup tests failed!");
+    USBSerial.println("BAD - I2C Pullup tests failed!");
   }
 
   // Combine test results
@@ -152,39 +171,39 @@ void setup() {
   //-----------------------------------
   singleResult = HIGH;
   SERIAL_DIVIDER;
-  Serial.println("Starting SD card test");
+  USBSerial.println("Starting SD card test");
 
   // Try mounting card
   if(!SD.begin()){
-    Serial.println("BAD - Card Mount Failed");
+    USBSerial.println("BAD - Card Mount Failed");
     singleResult = LOW;
   } else {
     uint8_t cardType = SD.cardType();
 
     // Find card type
     if(cardType == CARD_NONE){
-        Serial.println("BAD - No SD card attached");
+        USBSerial.println("BAD - No SD card attached");
         singleResult = LOW;
     } else {
 
-      Serial.print("SD Card Type: ");
+      USBSerial.print("SD Card Type: ");
       if(cardType == CARD_MMC){
-          Serial.println("MMC");
+          USBSerial.println("MMC");
       } else if(cardType == CARD_SD){
-          Serial.println("SDSC");
+          USBSerial.println("SDSC");
       } else if(cardType == CARD_SDHC){
-          Serial.println("SDHC");
+          USBSerial.println("SDHC");
       } else {
-          Serial.println("UNKNOWN");
+          USBSerial.println("UNKNOWN");
       }
 
       // Print SD size
-      Serial.printf("Total space: %lluMB\n", SD.totalBytes() / (1024 * 1024));
-      Serial.printf("Used space: %lluMB\n", SD.usedBytes() / (1024 * 1024));
+      USBSerial.printf("Total space: %lluMB\n", SD.totalBytes() / (1024 * 1024));
+      USBSerial.printf("Used space: %lluMB\n", SD.usedBytes() / (1024 * 1024));
 
       // Print individual result
       SERIAL_DIVIDER;
-      Serial.println("OK  - SD card found and mounted");
+      USBSerial.println("OK  - SD card found and mounted");
     }
   }
 
@@ -196,30 +215,31 @@ void setup() {
   // Evaluation
   //-----------------------------------
   SERIAL_DIVIDER;
-  if (overallResult) {
-    Serial.println("OK  - All automated tests passed!");
-  } else {
-    Serial.println("BAD - One or more automated tests failed!");
-  }
-
   SERIAL_DIVIDER;
-  Serial.println("Starting manual tests");
+  if (overallResult) {
+    USBSerial.println("OK  - All automated tests passed!");
+  } else {
+    USBSerial.println("BAD - One or more automated tests failed!");
+  }
+  SERIAL_DIVIDER;
+  SERIAL_DIVIDER;
+  USBSerial.println("Starting manual tests");
 
 
   //-----------------------------------
   // Wifi
   //-----------------------------------
   SERIAL_DIVIDER;
-  Serial.println("Creating Wifi access point");
+  USBSerial.println("Creating Wifi access point");
 
   //Start AP
   if (!WiFi.softAP(SSID, PASS)) {
-    Serial.println("BAD - Can't start Access point!");
+    USBSerial.println("BAD - Can't start Access point!");
   } else {
     IPAddress myIP = WiFi.softAPIP();
-    Serial.print("OK  - AP created, IP: ");
-    Serial.println(myIP);
-    Serial.println("Please try connecting to AP 'SelftestAP' manually using the password 'SelftestAP'");
+    USBSerial.print("OK  - AP created, IP: ");
+    USBSerial.println(myIP);
+    USBSerial.println("Please try connecting to AP 'SelftestAP' manually using the password 'SelftestAP'");
   }
 
 
@@ -227,7 +247,8 @@ void setup() {
   // LED
   //-----------------------------------
   SERIAL_DIVIDER;
-  Serial.println("Starting LED test, please observe if LED shows Red, Green and Blue");
+  USBSerial.println("Starting LED test, please observe if LED shows R, G then B");
+
 
 }
 
@@ -236,22 +257,39 @@ void setup() {
 //  loop
 //-----------------------------------------------------------------------------
 void loop() {
-
-  // Step through all LEDs
-  for (int led = PIN_FIRST_LED; led <= PIN_LAST_LED; led++) {
-
-    // Dim up
-    for (int value = 0; value <= MAX_PWM; value++) {
-      analogWrite(led, value);
-      delay(1);
-    }
-
-    // Dim down
+    //-----------------------------------
+    // LED
+    //-----------------------------------
+    // Red
     for (int value = MAX_PWM; value >= 0; value--) {
-      analogWrite(led, value);
+      analogWrite(PIN_LED_R, value);
+      delay(1);
+    }
+    for (int value = 0; value <= MAX_PWM; value++) {
+      analogWrite(PIN_LED_R, value);
+      delay(1);
+    }
+    // Green
+    for (int value = MAX_PWM; value >= 0; value--) {
+      analogWrite(PIN_LED_G, value);
+      delay(1);
+    }
+    for (int value = 0; value <= MAX_PWM; value++) {
+      analogWrite(PIN_LED_G, value);
+      delay(1);
+    }
+    // Blue
+    for (int value = MAX_PWM; value >= 0; value--) {
+      analogWrite(PIN_LED_B, value);
+      delay(1);
+    }
+    for (int value = 0; value <= MAX_PWM; value++) {
+      analogWrite(PIN_LED_B, value);
       delay(1);
     }
 
-  }
+    delay(500);
+
+
 
 }
