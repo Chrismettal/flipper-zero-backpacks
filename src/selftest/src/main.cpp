@@ -41,6 +41,12 @@
 #define PIN_I2C_PULLUP      3
 #define PIN_LPUART_RX       17
 #define PIN_LPUART_TX       18
+// List of all GPIOs, HIGH for every GPIO that is going to be tested
+#define NUMBER_GPIOS        43
+const bool gpios[NUMBER_GPIOS] = {
+  0,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1
+};
+
 // Wifi
 const char *SSID          = "SelftestAP";
 const char *PASS          = "SelftestAP";
@@ -53,7 +59,9 @@ const char *PASS          = "SelftestAP";
 //-----------------------------------------------------------------------------
 bool singleResult;
 bool overallResult;
+unsigned long gpioStartTime;
 USBCDC USBSerial;
+
 
 //-----------------------------------------------------------------------------
 //  Macros
@@ -75,7 +83,7 @@ void setup() {
   USB.begin();
 
   // wait for serial connection
-  while (!USBSerial){;}
+  //while (!USBSerial){;}
   USBSerial.println("Hoi!");
   delay(1000);
 
@@ -166,15 +174,22 @@ void setup() {
   // Combine test results
   overallResult = overallResult && singleResult;
 
+  
   //-----------------------------------
   // SD card
   //-----------------------------------
+  /*
   singleResult = HIGH;
   SERIAL_DIVIDER;
   USBSerial.println("Starting SD card test");
 
+
+  SPIClass spi = SPIClass(HSPI);
+  spi.begin(36, 37, 35, 10);
+
+
   // Try mounting card
-  if(!SD.begin()){
+  if(!SD.begin(10, spi)){
     USBSerial.println("BAD - Card Mount Failed");
     singleResult = LOW;
   } else {
@@ -209,7 +224,7 @@ void setup() {
 
   // Combine test results
   overallResult = overallResult && singleResult;
-
+  */
 
   //-----------------------------------
   // Evaluation
@@ -249,17 +264,8 @@ void setup() {
   SERIAL_DIVIDER;
   USBSerial.println("Starting LED test, please observe if LED shows R, G then B");
 
-
-}
-
-
-//-----------------------------------------------------------------------------
-//  loop
-//-----------------------------------------------------------------------------
-void loop() {
-    //-----------------------------------
-    // LED
-    //-----------------------------------
+  // Blink all colors a few times
+  for (int iteration = 1; iteration <= 3; iteration++) {
     // Red
     for (int value = MAX_PWM; value >= 0; value--) {
       analogWrite(PIN_LED_R, value);
@@ -289,7 +295,53 @@ void loop() {
     }
 
     delay(500);
+  }
+
+  SERIAL_DIVIDER;
+  USBSerial.println("LED Test done.");
 
 
+  //-----------------------------------
+  // GPIO
+  //-----------------------------------
+  SERIAL_DIVIDER;
+  USBSerial.println("Starting GPIO Test."); 
+  USBSerial.println("Each remaining exposed GPIO will flash n times, where n is the GPIO number.");
+  USBSerial.println("Each flash will be 1ms HIGH and 1ms LOW.");
+  USBSerial.println("Every 100ms the next pin is started.");
+  USBSerial.println("This test will repeat forever without further commandline instructions"); 
+}
 
+
+//-----------------------------------------------------------------------------
+//  loop
+//-----------------------------------------------------------------------------
+void loop() {
+
+  //-----------------------------------
+  // GPIO
+  //-----------------------------------
+  // Iterate through all pins
+  for (int pin = 0; pin < NUMBER_GPIOS; pin++) {
+    // Test only the ones enabled in the list
+    if (gpios[pin]) {
+
+      gpioStartTime = millis();
+
+      // Blink for n cycles
+      int cycle = 1;
+      while (cycle <= pin) {
+        digitalWrite(pin, HIGH);
+        delay(1);
+        digitalWrite(pin, LOW);
+        delay(1);
+        cycle++;
+      }
+      
+      // wait for 100ms to be over
+      delay(100 - (millis() - gpioStartTime));
+      
+    }
+  }
+  
 }
