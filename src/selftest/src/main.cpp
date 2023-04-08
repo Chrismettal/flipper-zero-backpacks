@@ -107,8 +107,8 @@ void setup() {
 
   // I2C
   pinMode(PIN_I2C_PULLUP, OUTPUT);
-  pinMode(PIN_LPUART_RX,  INPUT);
-  pinMode(PIN_LPUART_TX,  INPUT);
+  pinMode(PIN_LPUART_RX,  INPUT_PULLDOWN);
+  pinMode(PIN_LPUART_TX,  INPUT_PULLDOWN);
 
   // GPIO test
   // Iterate through all pins
