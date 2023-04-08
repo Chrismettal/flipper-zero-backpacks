@@ -133,19 +133,19 @@ void setup() {
   SERIAL_DIVIDER;
   USBSerial.println("Starting I2C pin selftests");
   USBSerial.println("Disabling pullups");
-  digitalWrite(PIN_I2C_PULLUP, LOW);
+  digitalWrite(PIN_I2C_PULLUP, HIGH);
   delay(50);
 
   singleResult = HIGH;
 
-  if (!digitalRead(PIN_LPUART_RX)) {
+  if (digitalRead(PIN_LPUART_RX) == LOW) {
     USBSerial.println("OK  - GPIO_17 (LPUART_RX) low");
   } else {
     USBSerial.println("BAD - GPIO_17 (LPUART_RX) stuck high");
     singleResult = LOW;
   }
 
-  if (!digitalRead(PIN_LPUART_TX)) {
+  if (digitalRead(PIN_LPUART_TX) == LOW) {
     USBSerial.println("OK  - GPIO_18 (LPUART_TX) low");
   } else {
     USBSerial.println("BAD - GPIO_18 (LPUART_TX) stuck high");
@@ -154,17 +154,17 @@ void setup() {
 
   // Test for high pullups
   USBSerial.println("Enabling pullups");
-  digitalWrite(PIN_I2C_PULLUP, HIGH);
+  digitalWrite(PIN_I2C_PULLUP, LOW);
   delay(50);
 
-  if (digitalRead(PIN_LPUART_RX)) {
+  if (digitalRead(PIN_LPUART_RX) == HIGH) {
     USBSerial.println("OK  - GPIO_17 (LPUART_RX) high");
   } else {
     USBSerial.println("BAD - GPIO_17 (LPUART_RX) stuck low");
     singleResult = LOW;
   }
 
-  if (digitalRead(PIN_LPUART_TX)) {
+  if (digitalRead(PIN_LPUART_TX) == HIGH) {
     USBSerial.println("OK  - GPIO_18 (LPUART_TX) high");
   } else {
     USBSerial.println("BAD - GPIO_18 (LPUART_TX) stuck low");
