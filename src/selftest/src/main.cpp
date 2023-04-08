@@ -105,11 +105,19 @@ void setup() {
   analogWrite(PIN_LED_G, MAX_PWM);
   analogWrite(PIN_LED_B, MAX_PWM);
 
-
   // I2C
   pinMode(PIN_I2C_PULLUP, OUTPUT);
   pinMode(PIN_LPUART_RX,  INPUT);
   pinMode(PIN_LPUART_TX,  INPUT);
+
+  // GPIO test
+  // Iterate through all pins
+  for (int pin = 0; pin < NUMBER_GPIOS; pin++) {
+    // Test only the ones enabled in the list
+    if (gpios[pin]) {
+      pinMode(pin, OUTPUT);
+    }
+  }
 
 
   //---------------------------------------------------------------------------
@@ -310,6 +318,7 @@ void setup() {
   USBSerial.println("Each flash will be 1ms HIGH and 1ms LOW.");
   USBSerial.println("Every 100ms the next pin is started.");
   USBSerial.println("This test will repeat forever without further commandline instructions"); 
+  SERIAL_DIVIDER;
 }
 
 
@@ -344,4 +353,5 @@ void loop() {
     }
   }
   
+  USBSerial.println("Starting back at GPIO_00.."); 
 }
