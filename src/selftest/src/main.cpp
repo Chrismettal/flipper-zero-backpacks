@@ -44,7 +44,7 @@
 // List of all GPIOs, HIGH for every GPIO that is going to be tested
 #define NUMBER_GPIOS        43
 const bool gpios[NUMBER_GPIOS] = {
-  0,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1,1,1,1,1
+  0,1,1,0,0,0,0,1,1,1,0,1,1,1,1,1,1,0,0,0,0,1,0,0,0,0,0,0,0,0,0,0,0,1,1,1,1,1,1,1,1,1,1
 };
 
 // Wifi
