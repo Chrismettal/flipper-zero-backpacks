@@ -5,6 +5,12 @@
   )
 
   (paper "A4")
+  (title_block
+    (title "ESP32")
+    (date "2023-04-09")
+    (company "Binary-6")
+  )
+
   (layers
     (0 "F.Cu" signal)
     (31 "B.Cu" signal)
@@ -3140,7 +3146,7 @@
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=7.62mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 7.62mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
     (zone_connect 0)
-    (attr board_only exclude_from_pos_files exclude_from_bom)
+    (attr board_only exclude_from_pos_files exclude_from_bom allow_missing_courtyard)
     (fp_text reference "H7" (at 6.761 1.661) (layer "F.SilkS") hide
         (effects (font (size 0.8 0.8) (thickness 0.12)))
       (tstamp c318ff41-c644-43ae-be3a-8cc10bbd45a8)
@@ -7811,14 +7817,15 @@
   (segment (start 127.762 99.91958) (end 128.021 99.91958) (width 0.254) (layer "B.Cu") (net 50) (tstamp 243f738b-cf68-4aef-900c-a32c482bcfdf))
   (segment (start 128.021 99.91958) (end 128.082 99.98058) (width 0.254) (layer "B.Cu") (net 50) (tstamp 27da9df1-ab4c-4126-813e-44ec1095f0a6))
   (segment (start 122.235947 107.057) (end 124.768896 107.057) (width 0.254) (layer "B.Cu") (net 50) (tstamp 2bed759b-b468-4e06-8c44-16f88c7f5cc7))
+  (segment (start 127.762 103.505) (end 127.762 99.91958) (width 0.254) (layer "B.Cu") (net 50) (tstamp 35ddd91c-ae4c-4703-9534-28be1492cf9d))
+  (segment (start 127.79358 103.53658) (end 127.762 103.505) (width 0.254) (layer "B.Cu") (net 50) (tstamp 507ea208-bcc9-418a-bc32-cf4249bc0e96))
   (segment (start 128.8565 99.98058) (end 128.082 99.98058) (width 0.254) (layer "B.Cu") (net 50) (tstamp 51019a41-8544-45ce-97ec-f9818f2c9da3))
   (segment (start 124.768896 107.057) (end 127.762 104.063896) (width 0.254) (layer "B.Cu") (net 50) (tstamp 72ac2ce6-fa4e-47af-be31-19aa26b70acc))
-  (segment (start 127.762 103.505) (end 127.79358 103.53658) (width 0.254) (layer "B.Cu") (net 50) (tstamp c3b881af-9eee-423f-99b3-877bfa93808b))
-  (segment (start 127.79358 103.53658) (end 128.8565 103.53658) (width 0.254) (layer "B.Cu") (net 50) (tstamp cf6b67a2-557b-48a3-8de8-da8551ea6c9f))
+  (segment (start 127.762 104.063896) (end 127.762 103.505) (width 0.254) (layer "B.Cu") (net 50) (tstamp 96d32578-984b-44d7-bbd7-0dc258889717))
   (segment (start 115.443 106.11) (end 115.795 106.462) (width 0.254) (layer "B.Cu") (net 50) (tstamp d0495487-8839-4c5a-90ed-1b205edc2116))
+  (segment (start 128.8565 103.53658) (end 127.79358 103.53658) (width 0.254) (layer "B.Cu") (net 50) (tstamp d8e22619-5e92-4c13-9f80-23453578cd63))
   (segment (start 121.640947 106.462) (end 122.235947 107.057) (width 0.254) (layer "B.Cu") (net 50) (tstamp e18f04d8-7f9b-404d-aa6e-69d12d8ce1d3))
   (segment (start 126.937 99.91958) (end 128.021 99.91958) (width 0.254) (layer "B.Cu") (net 50) (tstamp e588617f-0f72-4097-bdc1-747169d08f81))
-  (segment (start 127.762 104.063896) (end 127.762 99.91958) (width 0.254) (layer "B.Cu") (net 50) (tstamp f1aea2e8-aab3-4234-b683-506ab99408ba))
   (segment (start 115.443 105.539) (end 115.443 106.11) (width 0.254) (layer "B.Cu") (net 50) (tstamp f7a5f9f1-2a8e-4aed-af1c-bb1a1066b113))
   (segment (start 131.89 102.58658) (end 132.715 103.41158) (width 0.254) (layer "B.Cu") (net 51) (tstamp 69ce4d65-6153-4ec4-be22-68bfb64b689f))
   (segment (start 130.7315 102.58658) (end 131.89 102.58658) (width 0.254) (layer "B.Cu") (net 51) (tstamp c21f04e6-223a-404b-aa14-e6d30f13fb49))
@@ -7906,7 +7913,6 @@
   (via (at 153.6345 119.352997) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 69) (tstamp 3116f778-8bb8-4698-83c0-342462803265))
   (via (at 133.858 118.11) (size 0.8) (drill 0.4) (layers "F.Cu" "B.Cu") (net 69) (tstamp f9fddcc3-b438-4eed-b7cc-2482fc2e4c36))
   (segment (start 154.050497 118.937) (end 153.6345 119.352997) (width 0.254) (layer "B.Cu") (net 69) (tstamp 03385e83-bf35-43a8-9bed-43ced4fca233))
-  (segment (start 131.478 118.429) (end 131.49 118.417) (width 0.254) (layer "B.Cu") (net 69) (tstamp 7a7ea53f-e0a4-40e6-88bf-89a5a347943f))
   (segment (start 133.551 118.417) (end 131.49 118.417) (width 0.254) (layer "B.Cu") (net 69) (tstamp 970dc84f-579b-444d-8715-15832110e326))
   (segment (start 155.131 118.937) (end 154.050497 118.937) (width 0.254) (layer "B.Cu") (net 69) (tstamp 99226698-3482-44b1-ad41-819145637940))
   (segment (start 133.858 118.11) (end 133.551 118.417) (width 0.254) (layer "B.Cu") (net 69) (tstamp d7cffb75-5306-4e00-b56d-0a14f67342f0))
