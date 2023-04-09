@@ -2,14 +2,14 @@
 <export version="E">
   <design>
     <source>/home/chrismettal/GitLocal/FlipperZero/flipper-zero-backpacks/pcb/ESP32/ESP32.kicad_sch</source>
-    <date>Mo 16 Jan 2023 19:42:07 CET</date>
-    <tool>Eeschema (6.0.10)</tool>
+    <date>So 09 Apr 2023 16:59:55 CEST</date>
+    <tool>Eeschema 7.0.1</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
-        <title>Connecting Piece</title>
+        <title>ESP32</title>
         <company>Binary-6</company>
         <rev>Rev 1</rev>
-        <date>2023-01-07</date>
+        <date>2023-04-09</date>
         <source>ESP32.kicad_sch</source>
         <comment number="1" value=""/>
         <comment number="2" value=""/>
@@ -34,6 +34,8 @@
       <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d8a2db98-0ad9-4a69-b21b-48215cbb6ff9</tstamps>
     </comp>
@@ -47,6 +49,8 @@
       <property name="LCSC" value="C45783"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>bb2f8236-936d-471c-a319-0844484d9c58</tstamps>
     </comp>
@@ -60,6 +64,8 @@
       <property name="LCSC" value="C14663"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>5bf999e7-da86-428b-afe3-2550a861547a</tstamps>
     </comp>
@@ -73,6 +79,8 @@
       <property name="LCSC" value="C15850"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>bd6d32a1-fd54-48da-b5d7-b84deb6b8e56</tstamps>
     </comp>
@@ -86,6 +94,8 @@
       <property name="LCSC" value="C15850"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>81fe7e61-9bed-48d7-a473-1e4b8a87fed5</tstamps>
     </comp>
@@ -99,21 +109,26 @@
       <property name="LCSC" value="C45783"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Unpolarized capacitor"/>
+      <property name="ki_keywords" value="cap capacitor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>9d1c006f-4935-41dd-9e7d-f341cff4661a</tstamps>
     </comp>
     <comp ref="D1">
-      <value>LED_RGBA</value>
-      <footprint>MeineBib:LED_SK6812-Mini_RGB</footprint>
+      <value>LED_RBAG</value>
+      <footprint>MeineBib:LED_RGB_2.1mm_Foshan_Nationstar</footprint>
+      <datasheet>https://datasheet.lcsc.com/lcsc/2108150330_Foshan-NationStar-Optoelectronics-NH-B2020RGBA-HF_C2874116.pdf</datasheet>
       <fields>
-        <field name="LCSC">-</field>
+        <field name="LCSC">C2874116</field>
       </fields>
-      <libsource lib="Device" part="LED_RGBA" description="RGB LED, red/green/blue/anode"/>
-      <property name="LCSC" value="-"/>
+      <libsource lib="Device" part="LED_RBAG" description="RGB LED, red/blue/anode/green"/>
+      <property name="LCSC" value="C2874116"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="RGB LED, red/blue/anode/green"/>
+      <property name="ki_keywords" value="LED RGB diode"/>
       <sheetpath names="/" tstamps="/"/>
-      <tstamps>160e3252-ce75-45c6-9fad-9cb1451684f8</tstamps>
+      <tstamps>e60eb9ce-7094-4079-87df-bbfefc5b5f8c</tstamps>
     </comp>
     <comp ref="J1">
       <value>+5V</value>
@@ -125,6 +140,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8dc63579-a8d0-4fd0-860f-009112ef8ed9</tstamps>
     </comp>
@@ -138,6 +155,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>6c49fe57-c426-4aae-b0a2-160551b43083</tstamps>
     </comp>
@@ -151,6 +170,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>d446a865-021e-4b1f-924d-c5592b8d91f2</tstamps>
     </comp>
@@ -164,6 +185,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>fc2a4a3c-482f-4795-809b-eafb261f3baa</tstamps>
     </comp>
@@ -177,6 +200,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>70ace4cc-1736-4687-864f-6dedaa85eb41</tstamps>
     </comp>
@@ -190,6 +215,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4ca08e9e-933d-46ef-bff6-e92f511ccd3e</tstamps>
     </comp>
@@ -203,6 +230,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b6f63fe3-8de1-44d7-9dc1-50a284f7201e</tstamps>
     </comp>
@@ -216,6 +245,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>29a01654-2eff-4a77-b6f7-8d827e2aabdb</tstamps>
     </comp>
@@ -229,6 +260,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4998b2b7-3025-4623-883f-8af31f943ce6</tstamps>
     </comp>
@@ -242,6 +275,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3bd79970-37fb-407c-b0c7-fcca1913d6e5</tstamps>
     </comp>
@@ -255,6 +290,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>aad90da7-a25a-4e0a-be7b-dd5a26a8ebc0</tstamps>
     </comp>
@@ -268,6 +305,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8b89dd11-f2d3-480d-896b-b0758ad5bfba</tstamps>
     </comp>
@@ -281,6 +320,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7c85ea3d-2ad2-4f4b-847f-5c9a1f0f0ca4</tstamps>
     </comp>
@@ -294,6 +335,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3b006618-6964-4a5e-809f-7214b2ad16a8</tstamps>
     </comp>
@@ -307,6 +350,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>2248c5db-68c8-4b81-83ad-fe6feba97241</tstamps>
     </comp>
@@ -320,6 +365,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>64f5bf08-31f4-464f-b8c0-79b956b3d259</tstamps>
     </comp>
@@ -333,6 +380,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1d0771b4-221a-4e2a-afdc-0233eb94ded5</tstamps>
     </comp>
@@ -346,6 +395,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x01, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f2fc31f5-7672-492e-b096-ca05fa061c08</tstamps>
     </comp>
@@ -360,6 +411,8 @@
       <property name="LCSC" value="C2982555"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="USB 2.0-only Type-C Receptacle connector"/>
+      <property name="ki_keywords" value="usb universal serial bus type-C USB2.0"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>44529544-e222-4b78-856f-d2f85989a09d</tstamps>
     </comp>
@@ -373,6 +426,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x10, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ac9b4c2e-78c2-4311-8e0c-b7521804c0b6</tstamps>
     </comp>
@@ -386,6 +441,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>dbab0765-fb09-4e48-802e-1ab106b0c07d</tstamps>
     </comp>
@@ -399,6 +456,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, double row, 02x08, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>3c01c16f-001f-48bc-8781-7bb0cae305e7</tstamps>
     </comp>
@@ -412,6 +471,8 @@
       <property name="LCSC" value="-"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"/>
+      <property name="ki_keywords" value="connector"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a187cbd2-271f-47b1-92f0-35c12de2a6fa</tstamps>
     </comp>
@@ -426,6 +487,8 @@
       <property name="LCSC" value="C266620"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Micro SD Card Socket"/>
+      <property name="ki_keywords" value="connector SD microsd"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>c9dd2464-9d33-4b15-8374-977a3e0637a5</tstamps>
     </comp>
@@ -440,6 +503,8 @@
       <property name="LCSC" value="C20917"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>938de1c8-84fa-4038-8ab6-bd2e13bfb256</tstamps>
     </comp>
@@ -454,6 +519,8 @@
       <property name="LCSC" value="C20917"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="30V Vds, 5.7A Id, N-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="N-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>83441c2e-91f5-4373-a78f-442cc0d40eb6</tstamps>
     </comp>
@@ -468,6 +535,8 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e09abd1e-e0ae-47fa-b092-7e34ea530505</tstamps>
     </comp>
@@ -482,6 +551,8 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8000a01b-21a0-46bc-a1f6-42ac15811395</tstamps>
     </comp>
@@ -496,6 +567,8 @@
       <property name="LCSC" value="C460232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363"/>
+      <property name="ki_keywords" value="PNP/PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e7a5ffa9-e264-4a43-b554-807c96099a4f 5cbeeaa2-988e-407f-a41a-e695262d45e7</tstamps>
     </comp>
@@ -510,6 +583,8 @@
       <property name="LCSC" value="C460232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363"/>
+      <property name="ki_keywords" value="PNP/PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>dc297cad-c318-4d1b-b9bd-872de2934b87 bbb03c62-7f80-4d09-bb5d-cbe388bd0ef0</tstamps>
     </comp>
@@ -524,6 +599,8 @@
       <property name="LCSC" value="C460232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363"/>
+      <property name="ki_keywords" value="PNP/PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>53c976af-de4c-4f19-b0ff-2b5eadc3b427 10f2f8ea-4000-4da0-9e4b-25da558295ae</tstamps>
     </comp>
@@ -538,6 +615,8 @@
       <property name="LCSC" value="C460232"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="200mA IC, 40V Vce, Dual PNP/PNP Transistors, SOT-363"/>
+      <property name="ki_keywords" value="PNP/PNP Transistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>ad469d2e-63a4-4a6f-a723-442cce6103f9 38be2c62-c5e0-434b-bf09-2e9a471f2921</tstamps>
     </comp>
@@ -552,6 +631,8 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7cef5029-6ca0-4ee6-9eb4-4f2006ef6700</tstamps>
     </comp>
@@ -566,6 +647,8 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4d05841e-9193-4f7a-a984-4452b1f4637f</tstamps>
     </comp>
@@ -580,6 +663,8 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>71f14c79-0d8c-4d1b-bbfb-bc1c39129fce</tstamps>
     </comp>
@@ -594,21 +679,10 @@
       <property name="LCSC" value="C15127"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="-4.0A Id, -30V Vds, P-Channel MOSFET, SOT-23"/>
+      <property name="ki_keywords" value="P-Channel MOSFET"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e23399af-1589-48b3-add4-3f448933602d</tstamps>
-    </comp>
-    <comp ref="R1">
-      <value>10k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
-      <fields>
-        <field name="LCSC">C25804</field>
-      </fields>
-      <libsource lib="Device" part="R" description="Resistor"/>
-      <property name="LCSC" value="C25804"/>
-      <property name="Sheetname" value=""/>
-      <property name="Sheetfile" value="ESP32.kicad_sch"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamps>f859fdba-56f9-44be-8ba8-7a4d858db5ad</tstamps>
     </comp>
     <comp ref="R2">
       <value>5.1K</value>
@@ -620,6 +694,8 @@
       <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>85600afe-b50e-4a92-8744-cfab56811457</tstamps>
     </comp>
@@ -633,6 +709,8 @@
       <property name="LCSC" value="C23186"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>49d1b2e4-1ba4-455b-ba32-9c7e261ea074</tstamps>
     </comp>
@@ -646,6 +724,8 @@
       <property name="LCSC" value="C22775"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4c8dab31-d49d-47d5-b645-ec04cd3e43ef</tstamps>
     </comp>
@@ -659,6 +739,8 @@
       <property name="LCSC" value="C22808"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>9196f4e9-2dbc-4388-818c-93460f369515</tstamps>
     </comp>
@@ -672,6 +754,8 @@
       <property name="LCSC" value="C23193"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a160c70d-d830-40f3-93ca-b3bebfae013a</tstamps>
     </comp>
@@ -685,6 +769,8 @@
       <property name="LCSC" value="C23345"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>cd5cce0e-7da8-44ed-b967-f64f3460f887</tstamps>
     </comp>
@@ -698,6 +784,8 @@
       <property name="LCSC" value="C23345"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>275c2fa2-55dd-4422-82f9-0ad78e13c295</tstamps>
     </comp>
@@ -711,6 +799,8 @@
       <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>b42dc6d6-4850-464e-8d54-ab5a61a4dbae</tstamps>
     </comp>
@@ -724,6 +814,8 @@
       <property name="LCSC" value="C22808"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>4228f517-1d0d-4c40-bd44-1d8109ced3b7</tstamps>
     </comp>
@@ -737,6 +829,8 @@
       <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f73d5a19-8088-42ba-b911-0cf66d3c74a5</tstamps>
     </comp>
@@ -750,6 +844,8 @@
       <property name="LCSC" value="C22808"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>012b45ff-4479-4398-8d26-1e0a3ee1c0bc</tstamps>
     </comp>
@@ -763,6 +859,8 @@
       <property name="LCSC" value="C22808"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a4791687-ae0e-44c5-84e6-5e013e3f3e21</tstamps>
     </comp>
@@ -776,6 +874,8 @@
       <property name="LCSC" value="C25804"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>0d518ba7-f4a9-4193-957d-ee485a2da182</tstamps>
     </comp>
@@ -789,6 +889,8 @@
       <property name="LCSC" value="C23162"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>376b374d-3d0f-4ee2-9ea1-079ddbe49f3c</tstamps>
     </comp>
@@ -802,6 +904,8 @@
       <property name="LCSC" value="C23162"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>a4d0ed8a-f4b9-40a6-99b9-e46a99b4ca69</tstamps>
     </comp>
@@ -815,6 +919,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f6cdaba7-48ca-47f5-bb91-f7797e32297f</tstamps>
     </comp>
@@ -828,6 +934,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e6028b23-535b-4464-bba6-2f0ad59bf95f</tstamps>
     </comp>
@@ -841,6 +949,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>951a724a-0dc6-46bd-8821-10f465cf9fba</tstamps>
     </comp>
@@ -854,6 +964,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f7e5df31-757e-4248-9d3f-acfce73d6668</tstamps>
     </comp>
@@ -867,6 +979,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>8eda1a64-5acf-43f8-b4c8-eedc57ad0bf4</tstamps>
     </comp>
@@ -880,6 +994,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>1f5227c0-efc0-4f76-8d57-9a17c0e78a6b</tstamps>
     </comp>
@@ -893,6 +1009,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>f25ba9e2-cd1a-43ef-9427-0276565adf2f</tstamps>
     </comp>
@@ -906,6 +1024,8 @@
       <property name="LCSC" value="C25803"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Resistor"/>
+      <property name="ki_keywords" value="R res resistor"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>7a94c306-1b68-4933-acf5-74c77388955e</tstamps>
     </comp>
@@ -919,6 +1039,8 @@
       <property name="LCSC" value="C318884"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>dc32cc2d-7f80-4f0e-9b0c-8448d14e4dd9</tstamps>
     </comp>
@@ -932,6 +1054,8 @@
       <property name="LCSC" value="C318884"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="Push button switch, generic, two pins"/>
+      <property name="ki_keywords" value="switch normally-open pushbutton push-button"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>e566626d-0198-4b7c-a2a9-43dc4387fd72</tstamps>
     </comp>
@@ -941,11 +1065,16 @@
       <datasheet>https://www.espressif.com/sites/default/files/documentation/esp32-s2-wroom_esp32-s2-wroom-i_datasheet_en.pdf</datasheet>
       <fields>
         <field name="LCSC">C701334</field>
+        <field name="Notes">Original uses N4R2</field>
       </fields>
       <libsource lib="RF_Module" part="ESP32-S2-WROVER" description="RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD"/>
       <property name="LCSC" value="C701334"/>
+      <property name="Notes" value="Original uses N4R2"/>
+      <property name="Field6" value=""/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="RF Module, ESP32-D0WDQ6 SoC, Wi-Fi 802.11b/g/n, 32-bit, 2.7-3.6V, onboard antenna, SMD"/>
+      <property name="ki_keywords" value="RF Radio ESP ESP32 Espressif onboard PCB antenna"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>99c8f1cd-121c-4158-a33e-eb77b23c3a50</tstamps>
     </comp>
@@ -960,6 +1089,8 @@
       <property name="LCSC" value="C6186"/>
       <property name="Sheetname" value=""/>
       <property name="Sheetfile" value="ESP32.kicad_sch"/>
+      <property name="ki_description" value="1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223"/>
+      <property name="ki_keywords" value="linear regulator ldo fixed positive"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamps>52a4226f-fecd-42a2-88c8-98ad0eb21465</tstamps>
     </comp>
@@ -1124,8 +1255,8 @@
         <pin num="2" name="" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Device" part="LED_RGBA">
-      <description>RGB LED, red/green/blue/anode</description>
+    <libpart lib="Device" part="LED_RBAG">
+      <description>RGB LED, red/blue/anode/green</description>
       <docs>~</docs>
       <footprints>
         <fp>LED*</fp>
@@ -1134,14 +1265,14 @@
       </footprints>
       <fields>
         <field name="Reference">D</field>
-        <field name="Value">LED_RGBA</field>
+        <field name="Value">LED_RBAG</field>
         <field name="Datasheet">~</field>
       </fields>
       <pins>
         <pin num="1" name="RK" type="passive"/>
-        <pin num="2" name="GK" type="passive"/>
-        <pin num="3" name="BK" type="passive"/>
-        <pin num="4" name="A" type="passive"/>
+        <pin num="2" name="BK" type="passive"/>
+        <pin num="3" name="A" type="passive"/>
+        <pin num="4" name="GK" type="passive"/>
       </pins>
     </libpart>
     <libpart lib="Device" part="R">
@@ -1343,9 +1474,6 @@
     <library logical="Device">
       <uri>/usr/share/kicad/symbols//Device.kicad_sym</uri>
     </library>
-    <library logical="MeineBibli">
-      <uri>/home/chrismettal/mnt/Raidstone/Projects/_KiCAD_libraries_/MeineBibli.kicad_sym</uri>
-    </library>
     <library logical="RF_Module">
       <uri>/usr/share/kicad/symbols//RF_Module.kicad_sym</uri>
     </library>
@@ -1366,7 +1494,7 @@
     <net code="1" name="+3.3V">
       <node ref="C2" pin="1" pintype="passive"/>
       <node ref="C3" pin="1" pintype="passive"/>
-      <node ref="D1" pin="4" pinfunction="A" pintype="passive"/>
+      <node ref="D1" pin="3" pinfunction="A" pintype="passive"/>
       <node ref="J22" pin="2" pinfunction="Pin_2" pintype="passive"/>
       <node ref="J23" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J24" pin="4" pinfunction="VDD" pintype="power_in"/>
@@ -1376,7 +1504,6 @@
       <node ref="Q4" pin="2" pinfunction="S" pintype="passive"/>
       <node ref="Q7" pin="1" pinfunction="E1" pintype="passive"/>
       <node ref="Q8" pin="4" pinfunction="E2" pintype="passive"/>
-      <node ref="R1" pin="1" pintype="passive"/>
       <node ref="R11" pin="1" pintype="passive"/>
       <node ref="R14" pin="1" pintype="passive"/>
       <node ref="R9" pin="1" pintype="passive"/>
@@ -1582,134 +1709,133 @@
     <net code="34" name="LPUART_TX">
       <node ref="J15" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J20" pin="7" pinfunction="Pin_7" pintype="passive"/>
-      <node ref="R1" pin="2" pintype="passive"/>
       <node ref="R15" pin="2" pintype="passive"/>
       <node ref="U1" pin="21" pinfunction="IO18" pintype="bidirectional"/>
     </net>
-    <net code="35" name="Net-(D1-Pad1)">
+    <net code="35" name="Net-(D1-BK)">
+      <node ref="D1" pin="2" pinfunction="BK" pintype="passive"/>
+      <node ref="R4" pin="1" pintype="passive"/>
+    </net>
+    <net code="36" name="Net-(D1-GK)">
+      <node ref="D1" pin="4" pinfunction="GK" pintype="passive"/>
+      <node ref="R5" pin="1" pintype="passive"/>
+    </net>
+    <net code="37" name="Net-(D1-RK)">
       <node ref="D1" pin="1" pinfunction="RK" pintype="passive"/>
       <node ref="R6" pin="1" pintype="passive"/>
     </net>
-    <net code="36" name="Net-(D1-Pad2)">
-      <node ref="D1" pin="2" pinfunction="GK" pintype="passive"/>
-      <node ref="R5" pin="1" pintype="passive"/>
-    </net>
-    <net code="37" name="Net-(D1-Pad3)">
-      <node ref="D1" pin="3" pinfunction="BK" pintype="passive"/>
-      <node ref="R4" pin="1" pintype="passive"/>
-    </net>
-    <net code="38" name="Net-(J17-Pad1)">
+    <net code="38" name="Net-(J17-Pin_1)">
       <node ref="J17" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J20" pin="9" pinfunction="Pin_9" pintype="passive"/>
     </net>
-    <net code="39" name="Net-(J19-PadA5)">
+    <net code="39" name="Net-(J19-CC1)">
       <node ref="J19" pin="A5" pinfunction="CC1" pintype="bidirectional"/>
       <node ref="R3" pin="1" pintype="passive"/>
     </net>
-    <net code="40" name="Net-(J19-PadA6)">
+    <net code="40" name="Net-(J19-CC2)">
+      <node ref="J19" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
+      <node ref="R2" pin="1" pintype="passive"/>
+    </net>
+    <net code="41" name="Net-(J19-D+-PadA6)">
       <node ref="J19" pin="A6" pinfunction="D+" pintype="bidirectional"/>
       <node ref="J19" pin="B6" pinfunction="D+" pintype="bidirectional"/>
       <node ref="R8" pin="1" pintype="passive"/>
     </net>
-    <net code="41" name="Net-(J19-PadA7)">
+    <net code="42" name="Net-(J19-D--PadA7)">
       <node ref="J19" pin="A7" pinfunction="D-" pintype="bidirectional"/>
       <node ref="J19" pin="B7" pinfunction="D-" pintype="bidirectional"/>
       <node ref="R7" pin="1" pintype="passive"/>
     </net>
-    <net code="42" name="Net-(J19-PadB5)">
-      <node ref="J19" pin="B5" pinfunction="CC2" pintype="bidirectional"/>
-      <node ref="R2" pin="1" pintype="passive"/>
-    </net>
-    <net code="43" name="Net-(Q1-Pad1)">
+    <net code="43" name="Net-(Q1-G)">
       <node ref="Q1" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R10" pin="2" pintype="passive"/>
     </net>
-    <net code="44" name="Net-(Q2-Pad1)">
+    <net code="44" name="Net-(Q2-G)">
       <node ref="Q2" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R12" pin="2" pintype="passive"/>
     </net>
-    <net code="45" name="Net-(Q3-Pad1)">
+    <net code="45" name="Net-(Q3-D)">
+      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
+      <node ref="R15" pin="1" pintype="passive"/>
+    </net>
+    <net code="46" name="Net-(Q3-G)">
       <node ref="Q3" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q4" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R13" pin="2" pintype="passive"/>
       <node ref="R14" pin="2" pintype="passive"/>
     </net>
-    <net code="46" name="Net-(Q3-Pad3)">
-      <node ref="Q3" pin="3" pinfunction="D" pintype="passive"/>
-      <node ref="R15" pin="1" pintype="passive"/>
-    </net>
-    <net code="47" name="Net-(Q4-Pad3)">
+    <net code="47" name="Net-(Q4-D)">
       <node ref="Q4" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="R16" pin="1" pintype="passive"/>
     </net>
-    <net code="48" name="Net-(Q5-Pad2)">
+    <net code="48" name="Net-(Q5A-B1)">
       <node ref="Q5" pin="2" pinfunction="B1" pintype="input"/>
       <node ref="Q5" pin="3" pinfunction="C2" pintype="passive"/>
       <node ref="Q5" pin="5" pinfunction="B2" pintype="input"/>
       <node ref="R17" pin="1" pintype="passive"/>
     </net>
-    <net code="49" name="Net-(Q5-Pad6)">
+    <net code="49" name="Net-(Q5A-C1)">
       <node ref="Q5" pin="6" pinfunction="C1" pintype="passive"/>
       <node ref="Q9" pin="1" pinfunction="G" pintype="input"/>
       <node ref="R18" pin="1" pintype="passive"/>
     </net>
-    <net code="50" name="Net-(Q6-Pad2)">
+    <net code="50" name="Net-(Q6A-B1)">
       <node ref="Q6" pin="2" pinfunction="B1" pintype="input"/>
       <node ref="Q6" pin="5" pinfunction="B2" pintype="input"/>
       <node ref="Q6" pin="6" pinfunction="C1" pintype="passive"/>
       <node ref="R20" pin="1" pintype="passive"/>
     </net>
-    <net code="51" name="Net-(Q7-Pad2)">
+    <net code="51" name="Net-(Q7A-B1)">
       <node ref="Q7" pin="2" pinfunction="B1" pintype="input"/>
       <node ref="Q7" pin="3" pinfunction="C2" pintype="passive"/>
       <node ref="Q7" pin="5" pinfunction="B2" pintype="input"/>
       <node ref="R21" pin="1" pintype="passive"/>
     </net>
-    <net code="52" name="Net-(Q8-Pad2)">
+    <net code="52" name="Net-(Q8A-B1)">
       <node ref="Q8" pin="2" pinfunction="B1" pintype="input"/>
       <node ref="Q8" pin="5" pinfunction="B2" pintype="input"/>
       <node ref="Q8" pin="6" pinfunction="C1" pintype="passive"/>
       <node ref="R24" pin="1" pintype="passive"/>
     </net>
-    <net code="53" name="Net-(Q10-Pad1)">
+    <net code="53" name="Net-(Q10-G)">
       <node ref="Q10" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q6" pin="3" pinfunction="C2" pintype="passive"/>
       <node ref="R19" pin="1" pintype="passive"/>
     </net>
-    <net code="54" name="Net-(Q11-Pad1)">
+    <net code="54" name="Net-(Q11-G)">
       <node ref="Q11" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q7" pin="6" pinfunction="C1" pintype="passive"/>
       <node ref="R22" pin="1" pintype="passive"/>
     </net>
-    <net code="55" name="Net-(Q12-Pad1)">
+    <net code="55" name="Net-(Q12-G)">
       <node ref="Q12" pin="1" pinfunction="G" pintype="input"/>
       <node ref="Q8" pin="3" pinfunction="C2" pintype="passive"/>
       <node ref="R23" pin="1" pintype="passive"/>
     </net>
-    <net code="56" name="Net-(R4-Pad2)">
+    <net code="56" name="Net-(U1-IO04)">
       <node ref="R4" pin="2" pintype="passive"/>
       <node ref="U1" pin="7" pinfunction="IO04" pintype="bidirectional"/>
     </net>
-    <net code="57" name="Net-(R5-Pad2)">
+    <net code="57" name="Net-(U1-IO05)">
       <node ref="R5" pin="2" pintype="passive"/>
       <node ref="U1" pin="8" pinfunction="IO05" pintype="bidirectional"/>
     </net>
-    <net code="58" name="Net-(R6-Pad2)">
+    <net code="58" name="Net-(U1-IO06)">
       <node ref="R6" pin="2" pintype="passive"/>
       <node ref="U1" pin="9" pinfunction="IO06" pintype="bidirectional"/>
     </net>
-    <net code="59" name="Net-(R7-Pad2)">
-      <node ref="R7" pin="2" pintype="passive"/>
-      <node ref="U1" pin="22" pinfunction="USB_D-" pintype="bidirectional"/>
-    </net>
-    <net code="60" name="Net-(R8-Pad2)">
+    <net code="59" name="Net-(U1-USB_D+)">
       <node ref="R8" pin="2" pintype="passive"/>
       <node ref="U1" pin="23" pinfunction="USB_D+" pintype="bidirectional"/>
+    </net>
+    <net code="60" name="Net-(U1-USB_D-)">
+      <node ref="R7" pin="2" pintype="passive"/>
+      <node ref="U1" pin="22" pinfunction="USB_D-" pintype="bidirectional"/>
     </net>
     <net code="61" name="RX">
       <node ref="J14" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J20" pin="6" pinfunction="Pin_6" pintype="passive"/>
-      <node ref="U1" pin="38" pinfunction="RXD0" pintype="bidirectional"/>
+      <node ref="U1" pin="37" pinfunction="TXD0" pintype="bidirectional"/>
     </net>
     <net code="62" name="SWCLK">
       <node ref="J10" pin="1" pinfunction="Pin_1" pintype="passive"/>
@@ -1724,7 +1850,7 @@
     <net code="64" name="TX">
       <node ref="J13" pin="1" pinfunction="Pin_1" pintype="passive"/>
       <node ref="J20" pin="5" pinfunction="Pin_5" pintype="passive"/>
-      <node ref="U1" pin="37" pinfunction="TXD0" pintype="bidirectional"/>
+      <node ref="U1" pin="38" pinfunction="RXD0" pintype="bidirectional"/>
     </net>
     <net code="65" name="USB_+5V">
       <node ref="C1" pin="1" pintype="passive"/>
@@ -1735,22 +1861,22 @@
       <node ref="Q10" pin="3" pinfunction="D" pintype="passive"/>
       <node ref="Q6" pin="1" pinfunction="E1" pintype="passive"/>
     </net>
-    <net code="66" name="unconnected-(J19-PadA8)">
+    <net code="66" name="unconnected-(J19-SBU1-PadA8)">
       <node ref="J19" pin="A8" pinfunction="SBU1" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="67" name="unconnected-(J19-PadB8)">
+    <net code="67" name="unconnected-(J19-SBU2-PadB8)">
       <node ref="J19" pin="B8" pinfunction="SBU2" pintype="bidirectional+no_connect"/>
     </net>
-    <net code="68" name="unconnected-(J24-Pad1)">
-      <node ref="J24" pin="1" pinfunction="DAT2" pintype="bidirectional+no_connect"/>
-    </net>
-    <net code="69" name="unconnected-(J24-Pad8)">
+    <net code="68" name="unconnected-(J24-DAT1-Pad8)">
       <node ref="J24" pin="8" pinfunction="DAT1" pintype="bidirectional+no_connect"/>
+    </net>
+    <net code="69" name="unconnected-(J24-DAT2-Pad1)">
+      <node ref="J24" pin="1" pinfunction="DAT2" pintype="bidirectional+no_connect"/>
     </net>
     <net code="70" name="unconnected-(J24-PadCD)">
       <node ref="J24" pin="CD" pinfunction="CD" pintype="output+no_connect"/>
     </net>
-    <net code="71" name="unconnected-(U1-Pad25)">
+    <net code="71" name="unconnected-(U1-IO26-Pad25)">
       <node ref="U1" pin="25" pinfunction="IO26" pintype="bidirectional+no_connect"/>
     </net>
   </nets>
