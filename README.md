@@ -27,6 +27,7 @@ The first prototype run will be quite limited but if there is interest in more, 
 - [Boards](#boards)
   - [Connecting piece](#connecting-piece)
   - [ESP32 Wifi Dev board](#esp32-wifi-dev-board)
+  - [Internal / External Antenna](#internal--external-antenna)
 - [Sources](#sources)
 - [Donations](#donations)
 - [License](#license)
@@ -46,6 +47,14 @@ The addon board and the connecting piece slide into each other and get soldered 
 ![Wifi](img/Wifi.png)
 
 Very similar to the official Wifi dev board. Additionally includes a micro SD card slot so you don't have to mod the official board yourself. Currently in production - to be verified.
+
+### Internal / External Antenna
+
+The ESP32-S2 part number referenced in the BOM ([C701334](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-S2-WROVER-I-N4R2_C701334.html)) leads to an `-I` version of the ESP32-S2, which has the antenna plug mounted on the ESP. Versions without the `-I` in the product name do not have the antenna plug mounted. Next to the antenna plug is a small jumper that is set accordingly, to use either the internal PCB antenna, or the external plug antenna.
+
+By default, `-I` ESPs have the jumper set to use an external antenna via the plug. 
+
+**If you intend to use the internal PCB antenna you will need to move the jumper over, if you use an `-I` ESP32-S2!**
 
 ## Sources
 
