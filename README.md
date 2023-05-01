@@ -67,7 +67,6 @@ By default, `-I` ESPs have the jumper set to use an external antenna via the plu
 
 **if you use an `-I` ESP32-S2 you would need to move the jumper over to use the internal antenna!**
 
-
 ### Protoboard
 
 A simple `2.54mm` pitch protoboard backpack, fitting the same case as the ESP32 board. While it is through hole, beware that there isn't much space between the Flippers silicone case and the board, so make sure to only put taller components on the side facing away from the flipper, and stay pretty flat when wiring on the bottom side. Also remember that the bottom side will be somewhat exposed, so you should consider placing and wiring mostly on the encased side.
