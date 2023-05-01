@@ -27,6 +27,7 @@ The first prototype run will be quite limited but if there is interest in more, 
 - [Boards](#boards)
   - [Connecting piece](#connecting-piece)
   - [ESP32 Wifi Dev board](#esp32-wifi-dev-board)
+    - [Firmware](#firmware)
     - [Internal / External Antenna](#internal--external-antenna)
   - [Protoboard](#protoboard)
 - [Sources](#sources)
@@ -48,7 +49,13 @@ The addon board and the connecting piece slide into each other and get soldered 
 
 ![Wifi](img/Wifi.png)
 
-Very similar to the official Wifi dev board. Additionally includes a micro SD card slot so you don't have to mod the official board yourself. Currently in production, to be stocked at [Tindie](https://www.tindie.com/stores/binary-6/) soon after production finished.
+Very similar to the [official WiFi dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard). Additionally includes a micro SD card slot so you don't have to mod the official board yourself. Currently in production, to be stocked at [Tindie](https://www.tindie.com/stores/binary-6/) soon after production finished.
+
+#### Firmware
+
+The board ships with the [Black Magic debugger firmware](https://black-magic.org/), just like the official board. Alternatively you can use an alternate firmware like the [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder/wiki/flipper-zero) by [JustCallMeKoko](https://github.com/justcallmekoko) if you want to get spicy.
+
+**Every firmware that works on the [official dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard) should also work on this backpack**
 
 #### Internal / External Antenna
 
@@ -56,9 +63,10 @@ The ESP32-S2 part number referenced in the BOM ([C701334](https://www.lcsc.com/p
 
 By default, `-I` ESPs have the jumper set to use an external antenna via the plug. 
 
-**If you intend to use the internal PCB antenna you will need to move the jumper over, if you use an `-I` ESP32-S2!**
-
 **If you use a non `-I` variant of the ESP32-S2, like the boards found in the shop, you would have to mount an antenna plug before being able to use the external antenna**
+
+**if you use an `-I` ESP32-S2 you would need to move the jumper over to use the internal antenna!**
+
 
 ### Protoboard
 
