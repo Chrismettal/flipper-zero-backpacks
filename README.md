@@ -92,7 +92,7 @@ A 3D printable case project is included in `/3d_printing/flipper-zero-backpacks.
 
 You can use [FreeCAD](https://www.freecad.org/) to open and modify it. 
 
-A `bare` version, as well as one fitting the `ESP32` board have been exported as `.step` and `.3mf` files and are also uploaded to [Printables](https://www.printables.com/@ChrismettalBinary6/models).
+A `bare` version, as well as one fitting the `ESP32` board have been exported as `.step` and `.3mf` files into `/3d_printing/`.
 
 The cases can be printed without any supports and are best printed in PETG, but there is no reason why PLA wouldn't be sufficient.
 
