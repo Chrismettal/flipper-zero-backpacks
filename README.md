@@ -33,18 +33,6 @@ The first prototype run will be quite limited but if there is interest in more, 
 - [Making your own](#making-your-own)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
-  - [Step 1 - Clamp the back board vertically](#step-1---clamp-the-back-board-vertically)
-  - [Step 2 - Slide on the connecting piece](#step-2---slide-on-the-connecting-piece)
-  - [Step 3 - Solder down one of the connectors](#step-3---solder-down-one-of-the-connectors)
-  - [Step 4 - Reflow the connection, aligning the boards at 90 degrees](#step-4---reflow-the-connection-aligning-the-boards-at-90-degrees)
-  - [Step 5 - Make sure the boards are also aligned when viewed from the front](#step-5---make-sure-the-boards-are-also-aligned-when-viewed-from-the-front)
-  - [Step 6 - Solder the remaining connections on the top](#step-6---solder-the-remaining-connections-on-the-top)
-  - [Step 7 - Make sure that none of the connections are bridged between the pads horizontally](#step-7---make-sure-that-none-of-the-connections-are-bridged-between-the-pads-horizontally)
-  - [Step 8 - Flip the board around so you can see the bottom connections](#step-8---flip-the-board-around-so-you-can-see-the-bottom-connections)
-  - [Step 9 - Solder the bottom connections](#step-9---solder-the-bottom-connections)
-  - [Step 10 - Flip the board around again and solder the pin headers](#step-10---flip-the-board-around-again-and-solder-the-pin-headers)
-  - [Step 11 - Optional - Find the 3D printed case and screws](#step-11---optional---find-the-3d-printed-case-and-screws)
-  - [Step 12 - Slide the board into the case and screw down the 3 mounting points](#step-12---slide-the-board-into-the-case-and-screw-down-the-3-mounting-points)
 - [Sources](#sources)
 - [Donations](#donations)
 - [License](#license)
@@ -117,55 +105,55 @@ The cases can be printed without any supports and are best printed in PETG, but 
 <details>
   <summary markdown="span">Detailed build guide - click to expand</summary>
 
-  ### Step 1 - Clamp the back board vertically
+  **Step 1 - Clamp the back board vertically**
 
   ![Step1](/img/Manual_step1.jpg)
 
-  ### Step 2 - Slide on the connecting piece
+  **Step 2 - Slide on the connecting piece**
 
   ![Step2](/img/Manual_step2.jpg)
 
-  ### Step 3 - Solder down one of the connectors
+  **Step 3 - Solder down one of the connectors**
 
   You don't have to care about the angle of the boards for now.
 
   ![Step3](/img/Manual_step3.jpg)
 
-  ### Step 4 - Reflow the connection, aligning the boards at 90 degrees
+  **Step 4 - Reflow the connection, aligning the boards at 90 degrees**
 
   ![Step](/img/Manual_step4.jpg)
 
-  ### Step 5 - Make sure the boards are also aligned when viewed from the front
+  **Step 5 - Make sure the boards are also aligned when viewed from the front**
 
   ![Step5](/img/Manual_step5.jpg)
 
-  ### Step 6 - Solder the remaining connections on the top
+  **Step 6 - Solder the remaining connections on the top**
 
   ![Step6](/img/Manual_step6.jpg)
 
-  ### Step 7 - Make sure that none of the connections are bridged between the pads horizontally
+  **Step 7 - Make sure that none of the connections are bridged between the pads horizontally**
 
   ![Step7](/img/Manual_step7.jpg)
 
-  ### Step 8 - Flip the board around so you can see the bottom connections
+  **Step 8 - Flip the board around so you can see the bottom connections**
 
   ![Step8](/img/Manual_step8.jpg)
 
-  ### Step 9 - Solder the bottom connections
+  **Step 9 - Solder the bottom connections**
 
   ![Step9](/img/Manual_step9.jpg)
 
-  ### Step 10 - Flip the board around again and solder the pin headers
+  **Step 10 - Flip the board around again and solder the pin headers**
 
   Make sure to get them at a right angle to the board as well. Otherwise you will put stress on the board when inserting into the Flipper.
 
   ![Step10](/img/Manual_step10jpg)
 
-  ### Step 11 - Optional - Find the 3D printed case and screws
+  **Step 11 - Optional - Find the 3D printed case and screws**
 
   ![Step11](/img/Manual_step11.jpg)
 
-  ### Step 12 - Slide the board into the case and screw down the 3 mounting points
+  **Step 12 - Slide the board into the case and screw down the 3 mounting points**
 
   ![Step12](/img/Manual_step12.jpg)
 
