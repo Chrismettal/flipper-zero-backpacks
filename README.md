@@ -14,7 +14,7 @@ The backpack framework is designed to fit snugly to a Flipper inside its silicon
 
 ![FrontNoFlipper](img/FrontNoFlipper.png)
 
-Finished designs will be stocked at Tindie.
+Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores/binary-6/).
 The first prototype run will be quite limited but if there is interest in more, a bigger batch will be produced.
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
@@ -28,6 +28,7 @@ The first prototype run will be quite limited but if there is interest in more, 
   - [ESP32 Wifi Dev board](#esp32-wifi-dev-board)
     - [Firmware](#firmware)
     - [Internal / External Antenna](#internal--external-antenna)
+    - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
@@ -62,7 +63,9 @@ The addon board and the connecting piece slide into each other and get soldered 
 
 ![Wifi](img/NiceBack.jpg)
 
-Very similar to the [official WiFi dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard). Additionally includes a micro SD card slot so you don't have to mod the official board yourself. Currently in production, to be stocked at [Tindie](https://www.tindie.com/stores/binary-6/) soon after production finished.
+Very similar to the [official Wifi dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard). Additionally includes a micro SD card slot so you don't have to mod the official board yourself. 
+
+Other than that all guides applicable to the official Wifi dev board are also applicable here.
 
 #### Firmware
 
@@ -79,6 +82,10 @@ By default, `-I` ESPs have the jumper set to use an external antenna via the plu
 **If you use a non `-I` variant of the ESP32-S2, like the boards found in the shop, you would have to mount an antenna plug before being able to use the external antenna**
 
 **if you use an `-I` ESP32-S2 you would need to move the jumper over to use the internal antenna!**
+
+#### SD Card
+
+kThe ESP seems to be pretty restrictive in SD Card compatibility especially when running Marauder. This is not a limitation of this specific design but inherent to the ESP32. I've had luck with older and smaller SD cards sub 16 GB and Class 10 at max. OLDER `Sandisk Ultra Micro SDHC I` seem to work pretty well when formatted to `FAT32`.
 
 ### Protoboard
 
