@@ -30,6 +30,7 @@ The first prototype run will be quite limited but if there is interest in more, 
     - [Internal / External Antenna](#internal--external-antenna)
     - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
+- [Making your own](#making-your-own)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
   - [Step 1 - Clamp the back board vertically](#step-1---clamp-the-back-board-vertically)
@@ -92,6 +93,14 @@ kThe ESP seems to be pretty restrictive in SD Card compatibility especially when
 ![Protoboard](/img/ProtoNiceTop.jpg)
 
 A simple `2.54mm` pitch protoboard backpack, fitting the same case as the ESP32 board. While it is through hole, beware that there isn't much space between the Flippers silicone case and the board, so make sure to only put taller components on the side facing away from the flipper, and stay pretty flat when wiring on the bottom side. Also remember that the bottom side will be somewhat exposed, so you should consider placing and wiring mostly on the encased side.
+
+## Making your own
+
+All files to order your own boards from existing designs can be found under `/pcb/<BoardName>/FabricationFiles`. This includes Gerbers as well as BOMs for PCBA so the boards arrive fully built. All files were exported to be ordered at JLCPCB and use LCSC part numbers.
+
+**All boards need to be ordered as 1mm thickness so they fit together well!**
+
+There is also a clean KiCad project under `/pcb/Clean/` to create original designs. If you end up creating your own design I would love to merge your fork into this repo!
 
 ## 3D Printing
 
