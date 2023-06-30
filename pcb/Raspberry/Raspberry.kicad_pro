@@ -56,35 +56,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "items_not_allowed|102005000|129187000|3935601e-454b-4f3c-83e0-d0b9a54437d4|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|102005000|129187000|90bd7d06-e89c-486d-a06d-824b908c49ff|00000000-0000-0000-0000-000000000000",
-        "items_not_allowed|106927212|93813000|67d45111-7621-47c6-9207-9c6e62e1e667|00000000-0000-0000-0000-000000000000",
-        "solder_mask_bridge|145561000|131129000|00a316fe-a68e-4df0-bc3e-d7534c702583|aa9fb6ee-4ee2-4f41-ac20-1b94672b4430",
-        "solder_mask_bridge|145561000|131129000|2d6a4372-ad69-4970-b7a7-52f846179e97|8220a932-57e9-4f94-b2b9-e899cc43fea7",
-        "solder_mask_bridge|145561000|131129000|747dd5df-f7f5-47c4-a21f-8be5b68a8640|aa9fb6ee-4ee2-4f41-ac20-1b94672b4430",
-        "solder_mask_bridge|148355000|128335000|747dd5df-f7f5-47c4-a21f-8be5b68a8640|aa9fb6ee-4ee2-4f41-ac20-1b94672b4430",
-        "solder_mask_bridge|150133000|128335000|2e9b494f-8929-442c-97ba-718c7bca79f4|d3856b57-79c8-4a65-97f7-11ff28bdfd5f",
-        "solder_mask_bridge|150133000|128335000|b7b54b60-5617-4ebf-b246-061441cb9903|558409c7-cbc1-4ec0-9711-52bb0950521a",
-        "solder_mask_bridge|150133000|128335000|bc48506a-ca10-4906-ae00-540a9dd554e6|d3856b57-79c8-4a65-97f7-11ff28bdfd5f",
-        "solder_mask_bridge|150133000|128335000|ecca3f42-2575-41f6-8145-cb077b5105ce|bc48506a-ca10-4906-ae00-540a9dd554e6",
-        "solder_mask_bridge|152673000|128335000|2e9b494f-8929-442c-97ba-718c7bca79f4|14ae99b0-0fc9-4089-a2ff-99c3f0f9cbaa",
-        "solder_mask_bridge|152816965|131129000|c6acf960-c076-4e37-a779-a88f1dddbff8|8220a932-57e9-4f94-b2b9-e899cc43fea7",
-        "solder_mask_bridge|152848000|128335000|ecca3f42-2575-41f6-8145-cb077b5105ce|d3856b57-79c8-4a65-97f7-11ff28bdfd5f",
-        "solder_mask_bridge|155213000|128335000|2f4243d7-7602-413d-af87-5323ea710d19|7f91c770-1ef9-4903-b378-592fee417ddc",
-        "solder_mask_bridge|157499000|131129000|2d6a4372-ad69-4970-b7a7-52f846179e97|8220a932-57e9-4f94-b2b9-e899cc43fea7",
-        "solder_mask_bridge|157753000|128335000|2f4243d7-7602-413d-af87-5323ea710d19|2afe7eca-69e7-4145-8de8-4f9ff664d96a",
-        "solder_mask_bridge|157753000|128335000|329315a9-bd86-4f7b-8fe1-b2fa14bdb1e7|2f4243d7-7602-413d-af87-5323ea710d19",
-        "solder_mask_bridge|157753000|128335000|8c70626c-8ad2-4016-b2a8-c5569fcf0d5f|2f4243d7-7602-413d-af87-5323ea710d19",
-        "solder_mask_bridge|157753000|128335000|8c70626c-8ad2-4016-b2a8-c5569fcf0d5f|7f91c770-1ef9-4903-b378-592fee417ddc",
-        "solder_mask_bridge|157753000|128335000|b153cf74-4c87-4af8-a664-835038704c57|2afe7eca-69e7-4145-8de8-4f9ff664d96a",
-        "solder_mask_bridge|159023000|128335000|329315a9-bd86-4f7b-8fe1-b2fa14bdb1e7|2f4243d7-7602-413d-af87-5323ea710d19",
-        "solder_mask_bridge|159023000|128335000|45b1e0f2-0f0c-435a-84b1-1f02bdfed28a|b153cf74-4c87-4af8-a664-835038704c57",
-        "solder_mask_bridge|160039000|127319000|45b1e0f2-0f0c-435a-84b1-1f02bdfed28a|b153cf74-4c87-4af8-a664-835038704c57",
-        "solder_mask_bridge|160039000|127319000|fb736e73-62f1-4e9f-8ffa-148090288e12|c7f5600e-4efc-4cbf-9066-559fa8ecacd0",
-        "solder_mask_bridge|160547000|128081000|55499743-60ac-4b9b-82be-d1cd3fdb6f9b|515b1630-c4e9-4841-80c0-faa3169dd669",
-        "solder_mask_bridge|160968400|128081000|399dfec6-1c89-46a1-9339-a1ccbcc179ff|12a2f076-ee1b-4267-8b9f-2179dc41784f"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -458,6 +430,23 @@
         "via_diameter": 0.8,
         "via_drill": 0.4,
         "wire_width": 6
+      },
+      {
+        "bus_width": 12,
+        "clearance": 0.2,
+        "diff_pair_gap": 0.25,
+        "diff_pair_via_gap": 0.25,
+        "diff_pair_width": 0.2,
+        "line_style": 0,
+        "microvia_diameter": 0.3,
+        "microvia_drill": 0.1,
+        "name": "Power",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
+        "track_width": 0.5,
+        "via_diameter": 0.8,
+        "via_drill": 0.4,
+        "wire_width": 6
       }
     ],
     "meta": {
@@ -465,7 +454,16 @@
     },
     "net_colors": null,
     "netclass_assignments": null,
-    "netclass_patterns": []
+    "netclass_patterns": [
+      {
+        "netclass": "Power",
+        "pattern": "GND"
+      },
+      {
+        "netclass": "Power",
+        "pattern": "+*"
+      }
+    ]
   },
   "pcbnew": {
     "last_paths": {
