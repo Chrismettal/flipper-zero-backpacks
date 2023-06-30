@@ -1,0 +1,6 @@
+Comment,Designator,Footprint,LCSC
+"CR927 (3V)","BT1","MeineBib:MY-927-01 CR927 Battery Holder","C964850"
+"2.2µF","C1","Capacitor_SMD:C_0603_1608Metric","C23630"
+"1K","R1","Resistor_SMD:R_0603_1608Metric","C21190"
+"PCF8523T","U1","Package_SO:SOIC-8_3.9x4.9mm_P1.27mm","C2651516"
+"32.768kHz","Y1","Crystal:Crystal_SMD_3215-2Pin_3.2x1.5mm","C32346"

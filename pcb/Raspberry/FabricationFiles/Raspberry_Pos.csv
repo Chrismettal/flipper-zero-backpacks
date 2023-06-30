@@ -1,0 +1,6 @@
+Designator,Val,Package,Mid X,Mid Y,Rotation,Layer
+"BT1","CR927 (3V)","MY-927-01 CR927 Battery Holder",26.670000,-7.620000,-90.000000,bottom
+"C1","2.2µF","C_0603_1608Metric",4.049000,-7.047000,180.000000,bottom
+"R1","1K","R_0603_1608Metric",4.049000,-9.841000,0.000000,bottom
+"U1","PCF8523T","SOIC-8_3.9x4.9mm_P1.27mm",10.937000,-8.382000,180.000000,bottom
+"Y1","32.768kHz","Crystal_SMD_3215-2Pin_3.2x1.5mm",17.780000,-7.301000,90.000000,bottom
