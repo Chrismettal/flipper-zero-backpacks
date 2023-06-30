@@ -15,7 +15,6 @@ The backpack framework is designed to fit snugly to a Flipper inside its silicon
 ![FrontNoFlipper](img/FrontNoFlipper.png)
 
 Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores/binary-6/).
-The first prototype run will be quite limited but if there is interest in more, a bigger batch will be produced.
 
 <a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
 
@@ -30,6 +29,9 @@ The first prototype run will be quite limited but if there is interest in more, 
     - [Internal / External Antenna](#internal--external-antenna)
     - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
+  - [Raspberry Pi Zero W](#raspberry-pi-zero-w)
+    - [Building](#building)
+    - [PCF8523](#pcf8523)
 - [Making your own](#making-your-own)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
@@ -81,6 +83,26 @@ kThe ESP seems to be pretty restrictive in SD Card compatibility especially when
 ![Protoboard](/img/ProtoNiceTop.jpg)
 
 A simple `2.54mm` pitch protoboard backpack, fitting the same case as the ESP32 board. While it is through hole, beware that there isn't much space between the Flippers silicone case and the board, so make sure to only put taller components on the side facing away from the flipper, and stay pretty flat when wiring on the bottom side. Also remember that the bottom side will be somewhat exposed, so you should consider placing and wiring mostly on the encased side.
+
+### Raspberry Pi Zero W
+
+![Raspberry](/img/Raspberry.jpg)
+
+(Better image to follow once boards arrive)
+
+This is an adapter to supply and connect a Raspberry Pi Zero W to the Flipper via UART.
+
+The board was mainly created for the [Flippagotchi](https://github.com/Matt-London/pwnagotchi-flipper) app, which renders a [Pwnagotchi](https://pwnagotchi.ai/)`s screen onto the flipper.
+
+Additionally, the board includes a `PCF8523` realtime clock so your Pwnagotchi actually knows what time it is. The battery used for the RTC is a `CR927`.
+
+#### Building
+
+The soldering guide can be found on the PCB itself. You will need a Raspberry Pi Zero W WITHOUT ANY PIN HEADERS MOUNTED, which will be layed flat onto the adapter PCB before being screwed down. The required pin headers will then just be filled with solder.
+
+#### PCF8523
+
+TODO: Doc on how to set time follows when the boards arrive
 
 ## Making your own
 
