@@ -57,22 +57,9 @@
         }
       ],
       "drc_exclusions": [
-        "courtyards_overlap|101720001|93417001|67d45111-7621-47c6-9207-9c6e62e1e667|466f50b0-d6ec-49e3-ae56-d4ca2aa6bc10",
-        "courtyards_overlap|107244999|93812999|466f50b0-d6ec-49e3-ae56-d4ca2aa6bc10|67d45111-7621-47c6-9207-9c6e62e1e667",
-        "hole_clearance|160095000|116799000|05062595-f5ce-4e81-9011-6b5987599bfb|9ce5c344-c1bb-4503-807d-2195a333698f",
-        "hole_clearance|160095000|116799000|05062595-f5ce-4e81-9011-6b5987599bfb|d353e46d-9c0a-44d7-a95d-4e0a955094a2",
-        "hole_clearance|160095000|116999000|05062595-f5ce-4e81-9011-6b5987599bfb|6dd28320-6b21-41f5-803e-342f18c166cb",
-        "hole_clearance|160095000|116999000|05062595-f5ce-4e81-9011-6b5987599bfb|fb6a547c-e291-4b79-9689-40bb17cc3236",
-        "hole_clearance|160095000|122399000|df4c55e2-954b-40a2-bf31-88eb7fdaf9b9|ac12db5e-2c48-425d-bfe3-abb30cd7602f",
-        "hole_clearance|160095000|122399000|df4c55e2-954b-40a2-bf31-88eb7fdaf9b9|ce5047e9-5502-415e-92ef-57a076925c3a",
-        "hole_clearance|160095000|122599000|df4c55e2-954b-40a2-bf31-88eb7fdaf9b9|08db016d-0c2a-4cf6-b623-a73da08b0f2b",
-        "hole_clearance|160095000|122599000|df4c55e2-954b-40a2-bf31-88eb7fdaf9b9|285b7bac-0cfa-4da3-989f-0d0107a2ef75",
         "items_not_allowed|102005000|129187000|3935601e-454b-4f3c-83e0-d0b9a54437d4|00000000-0000-0000-0000-000000000000",
         "items_not_allowed|102005000|129187000|90bd7d06-e89c-486d-a06d-824b908c49ff|00000000-0000-0000-0000-000000000000",
         "items_not_allowed|106927212|93813000|67d45111-7621-47c6-9207-9c6e62e1e667|00000000-0000-0000-0000-000000000000",
-        "silk_edge_clearance|165925000|114999000|4cce7267-c1ba-4da4-be72-4450ff7651aa|24f26232-d0e4-4054-8d83-8aea74a15e48",
-        "silk_edge_clearance|165925000|124399000|4cce7267-c1ba-4da4-be72-4450ff7651aa|ddf5d438-f0f3-422f-aeaf-4a0648dad14f",
-        "silk_over_copper|156928000|128335000|b6e22b89-1c92-4bd4-8a02-b52927a8fbab|2afe7eca-69e7-4145-8de8-4f9ff664d96a",
         "solder_mask_bridge|145561000|131129000|00a316fe-a68e-4df0-bc3e-d7534c702583|aa9fb6ee-4ee2-4f41-ac20-1b94672b4430",
         "solder_mask_bridge|145561000|131129000|2d6a4372-ad69-4970-b7a7-52f846179e97|8220a932-57e9-4f94-b2b9-e899cc43fea7",
         "solder_mask_bridge|145561000|131129000|747dd5df-f7f5-47c4-a21f-8be5b68a8640|aa9fb6ee-4ee2-4f41-ac20-1b94672b4430",
@@ -96,8 +83,7 @@
         "solder_mask_bridge|160039000|127319000|45b1e0f2-0f0c-435a-84b1-1f02bdfed28a|b153cf74-4c87-4af8-a664-835038704c57",
         "solder_mask_bridge|160039000|127319000|fb736e73-62f1-4e9f-8ffa-148090288e12|c7f5600e-4efc-4cbf-9066-559fa8ecacd0",
         "solder_mask_bridge|160547000|128081000|55499743-60ac-4b9b-82be-d1cd3fdb6f9b|515b1630-c4e9-4841-80c0-faa3169dd669",
-        "solder_mask_bridge|160968400|128081000|399dfec6-1c89-46a1-9339-a1ccbcc179ff|12a2f076-ee1b-4267-8b9f-2179dc41784f",
-        "starved_thermal|112740000|126292000|ede8ca18-7951-4de6-840b-74002829ff8a|c7a87a0f-e253-48ed-8e3d-9a8da30ffe20|B.Cu"
+        "solder_mask_bridge|160968400|128081000|399dfec6-1c89-46a1-9339-a1ccbcc179ff|12a2f076-ee1b-4267-8b9f-2179dc41784f"
       ],
       "meta": {
         "version": 2
@@ -451,7 +437,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "ESP32.kicad_pro",
+    "filename": "Clean.kicad_pro",
     "version": 1
   },
   "net_settings": {
