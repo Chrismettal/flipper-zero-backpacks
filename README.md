@@ -58,6 +58,8 @@ Very similar to the [official Wifi dev board](https://shop.flipperzero.one/colle
 
 Other than that all guides applicable to the official Wifi dev board are also applicable here.
 
+In this repo, there are 3D files for boards with the internal, as well as the external antenna available. The board is the same between the two, only the part number of the ESP changes.
+
 #### Firmware
 
 The board ships with the [Black Magic debugger firmware](https://black-magic.org/), just like the official board. Alternatively you can use an alternate firmware like the [ESP32 Marauder](https://github.com/justcallmekoko/ESP32Marauder/wiki/flipper-zero) by [JustCallMeKoko](https://github.com/justcallmekoko) if you want to get spicy.
@@ -96,6 +98,10 @@ The board was mainly created for the [Flippagotchi](https://github.com/Matt-Lond
 
 Additionally, the board includes a `PCF8523` realtime clock so your Pwnagotchi actually knows what time it is. The battery used for the RTC is a `CR927`.
 
+TODO https://pwnagotchi.ai/configuration/#connecting-to-pi0w-with-microusb-cable-on-linux-host
+TODO https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time 
+TODO 'sudo date -s 'YYYY-MM-DD HH:MM:SS' if there is no internet
+
 #### Building
 
 The soldering guide can be found on the PCB itself. You will need a Raspberry Pi Zero W WITHOUT ANY PIN HEADERS MOUNTED, which will be layed flat onto the adapter PCB before being screwed down. The required pin headers will then just be filled with solder.
@@ -125,7 +131,7 @@ The cases can be printed without any supports and are best printed in PETG, but 
 ## Building guide
 
 <details>
-  <summary markdown="span">Detailed build guide - click to expand</summary>
+  <summary markdown="span">General build guide - click to expand</summary>
 
   **Step 1 - Clamp the back board vertically**
 
@@ -169,15 +175,75 @@ The cases can be printed without any supports and are best printed in PETG, but 
 
   Make sure to get them at a right angle to the board as well. Otherwise you will put stress on the board when inserting into the Flipper.
 
-  ![Step10](/img/Manual_step10jpg)
+  ![Step10](/img/Manual_step10.jpg)
 
   **Step 11 - Optional - Find the 3D printed case and screws**
 
   ![Step11](/img/Manual_step11.jpg)
 
+  <details>
+    <summary markdown="span">Excursion: Installing the antenna jack for external antenna boards</summary>
+
+  **Step 11.1 - Insert the antenna jack into the slot and fix nut from the outside**
+
+  ![Step11.1](/img/Manual_step11_1.jpg)
+  
+  ![Step11.1b](/img/Manual_step11_1b.jpg)
+
+  **Step 11.2 - Plug antenna extension into the board**
+  
+  ![Step11.2](/img/Manual_step11_2.jpg)
+
+  **Step 11.3 - Carefully route the extension while inserting the board**
+  
+  ![Step11.3](/img/Manual_step11_3.jpg)
+
+  **Step 11.4 - Make sure the board is seated without pinching the wire**
+  
+  ![Step11.4](/img/Manual_step11_4.jpg)
+
+  </details>
+
   **Step 12 - Slide the board into the case and screw down the 3 mounting points**
 
   ![Step12](/img/Manual_step12.jpg)
+
+</details>
+
+<details>
+  <summary markdown="span">Raspberry Pi specific assembly - click to expand</summary>
+
+  **Step 0 - Find the Wifi board and read the instructions as printed on the board**
+
+  ![Step0](/img/Manual_Wifi_step0.jpg)
+
+  **Step 1 - Place the Raspberry on top of the board**
+
+  Note the lack of pin headers. The board won't fit with headers installed!
+
+  ![Step1](/img/Manual_Wifi_step1.jpg)
+
+  **Step 2 - Screw down the raspberry using M2.5 screws and nuts from behind**
+
+  The screws are countersunk into the PCB so they will be flat from the outside
+
+  ![Step2](/img/Manual_Wifi_step2.jpg)
+
+  **Step 3 - Solder the 7 connections through both boards**
+
+  With the Raspberry face down, heat the pads from the backpack board and apply solder into the hole. You will see the solder "bubble down" through both holes forming a connection between the boards.
+
+  Flipping the board to the front you should see solder ran all the way through both boards. This picture shows 50% of the solder process done, having soldered only from the back:
+
+  ![Step3](/img/Manual_Wifi_step3.jpg)
+
+  When it looks like this, apply some solder from the top as well to make the connections look nice from both sides.
+
+  **Step 4 - The finished board should look like this**
+
+  You should now see clean connections between both sides of the board. You can now insert the CR927 battery for the RTC if desired, and continue with the rest of the general build guide, to assemble your backpack.
+
+  ![Step4](/img/Manual_Wifi_step4.jpg)
 
 </details>
 
