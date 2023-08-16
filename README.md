@@ -30,8 +30,6 @@ Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores
     - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
   - [Raspberry Pi Zero W](#raspberry-pi-zero-w)
-    - [Building](#building)
-    - [PCF8523](#pcf8523)
 - [Making your own](#making-your-own)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
@@ -90,25 +88,15 @@ A simple `2.54mm` pitch protoboard backpack, fitting the same case as the ESP32 
 
 ![Raspberry](/img/Raspberry.jpg)
 
-(Better image to follow once boards arrive)
-
 This is an adapter to supply and connect a Raspberry Pi Zero W to the Flipper via UART.
 
 The board was mainly created for the [Flippagotchi](https://github.com/Matt-London/pwnagotchi-flipper) app, which renders a [Pwnagotchi](https://pwnagotchi.ai/)`s screen onto the flipper.
 
 Additionally, the board includes a `PCF8523` realtime clock so your Pwnagotchi actually knows what time it is. The battery used for the RTC is a `CR927`.
 
-TODO https://pwnagotchi.ai/configuration/#connecting-to-pi0w-with-microusb-cable-on-linux-host
-TODO https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time 
-TODO 'sudo date -s 'YYYY-MM-DD HH:MM:SS' if there is no internet
+To set up the Realtime clock, you can follow the guide on the [Pwnagotchi docs](https://pwnagotchi.ai/configuration/#connecting-to-pi0w-with-microusb-cable-on-linux-host) as well as [Adafruit](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time).
 
-#### Building
-
-The soldering guide can be found on the PCB itself. You will need a Raspberry Pi Zero W WITHOUT ANY PIN HEADERS MOUNTED, which will be layed flat onto the adapter PCB before being screwed down. The required pin headers will then just be filled with solder.
-
-#### PCF8523
-
-TODO: Doc on how to set time follows when the boards arrive
+If you don't want to connect your pwnagotchi to the internet, you can always set its time with 'sudo date -s 'YYYY-MM-DD HH:MM:SS', before writing the Raspberry's time the RTC with `sudo hwclock -w`
 
 ## Making your own
 
