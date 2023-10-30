@@ -201,29 +201,29 @@ The cases can be printed without any supports and are best printed in PETG, but 
 <details>
   <summary markdown="span">Raspberry Pi specific assembly - click to expand</summary>
 
-  **Step 0 - Find the Wifi board and read the instructions as printed on the board**
+  **Step 0 - Find the Raspberry board and read the instructions as printed on the board**
 
-  ![Step0](/img/Manual_Wifi_step0.jpg)
+  ![Step0](/img/Manual_Rpi_step0.jpg)
 
-  **Step 1 - Place the Raspberry on top of the board**
+  **Step 1 - Place the Raspberry Pi Zero W on top of the board**
 
   Note the lack of pin headers. The board won't fit with headers installed!
 
-  ![Step1](/img/Manual_Wifi_step1.jpg)
+  ![Step1](/img/Manual_Rpi_step1.jpg)
 
-  **Step 2 - Screw down the raspberry using M2.5 screws and nuts from behind**
+  **Step 2 - Screw down the Raspberry Pi Zero W using M2.5 screws and nuts from behind**
 
   The screws are countersunk into the PCB so they will be flat from the outside
 
-  ![Step2](/img/Manual_Wifi_step2.jpg)
+  ![Step2](/img/Manual_Rpi_step2.jpg)
 
   **Step 3 - Solder the 7 connections through both boards**
 
-  With the Raspberry face down, heat the pads from the backpack board and apply solder into the hole. You will see the solder "bubble down" through both holes forming a connection between the boards.
+  With the Pi face down, heat the pads from the backpack board and apply solder into the hole. You will see the solder "bubble down" through both holes forming a connection between the boards.
 
   Flipping the board to the front you should see solder ran all the way through both boards. This picture shows 50% of the solder process done, having soldered only from the back:
 
-  ![Step3](/img/Manual_Wifi_step3.jpg)
+  ![Step3](/img/Manual_Rpi_step3.jpg)
 
   When it looks like this, apply some solder from the top as well to make the connections look nice from both sides.
 
@@ -231,7 +231,7 @@ The cases can be printed without any supports and are best printed in PETG, but 
 
   You should now see clean connections between both sides of the board. You can now insert the CR927 battery for the RTC if desired, and continue with the rest of the general build guide, to assemble your backpack.
 
-  ![Step4](/img/Manual_Wifi_step4.jpg)
+  ![Step4](/img/Manual_Rpi_step4.jpg)
 
 </details>
 
