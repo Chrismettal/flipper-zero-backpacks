@@ -86,7 +86,7 @@ A simple `2.54mm` pitch protoboard backpack, fitting the same case as the ESP32 
 
 ### Raspberry Pi Zero W
 
-![Raspberry](/img/Raspberry.jpg)
+![Raspberry](/img/RpiNiceBack.jpg)
 
 This is an adapter to supply and connect a Raspberry Pi Zero W to the Flipper via UART.
 
