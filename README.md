@@ -96,7 +96,7 @@ Additionally, the board includes a `PCF8523` realtime clock so your Pwnagotchi a
 
 To set up the Realtime clock, you can follow the guide on the [Pwnagotchi docs](https://pwnagotchi.ai/configuration/#connecting-to-pi0w-with-microusb-cable-on-linux-host) as well as [Adafruit](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time).
 
-If you don't want to connect your pwnagotchi to the internet, you can always set its time with 'sudo date -s 'YYYY-MM-DD HH:MM:SS', before writing the Raspberry's time the RTC with `sudo hwclock -w`
+If you don't want to connect your pwnagotchi to the internet, you can always set its time with `'sudo date -s 'YYYY-MM-DD HH:MM:SS'` , before writing the Raspberry's time the RTC with `sudo hwclock -w`
 
 ## Making your own
 
