@@ -76,7 +76,7 @@ By default, `-I` ESPs have the jumper set to use an external antenna via the plu
 
 #### SD Card
 
-kThe ESP seems to be pretty restrictive in SD Card compatibility especially when running Marauder. This is not a limitation of this specific design but inherent to the ESP32. I've had luck with older and smaller SD cards sub 16 GB and Class 10 at max. OLDER `Sandisk Ultra Micro SDHC I` seem to work pretty well when formatted to `FAT32`.
+The ESP seems to be pretty restrictive in SD Card compatibility especially when running Marauder. This is not a limitation of this specific design but inherent to the ESP32. I've had luck with older and smaller SD cards sub 16 GB and Class 10 at max. OLDER `Sandisk Ultra Micro SDHC I` seem to work pretty well when formatted to `FAT32`.
 
 ### Protoboard
 
