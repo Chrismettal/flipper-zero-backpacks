@@ -1,0 +1,337 @@
+{
+  "uuid": "6ea56f65c900ac6c51acf2068fae781c",
+  "path": "Offline/hat",
+  "name": "hat",
+  "content": "",
+  "created_at": "2024-01-25 10:12:46",
+  "updated_at": "2024-01-25 10:40:48",
+  "stick": "",
+  "documents": [
+    {
+      "uuid": "cf550090f60c6122156251c019abd516",
+      "title": "Sheet_1",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "f729e478b955495882e91bc4e02ecf06": 1,
+        "4942e9914e2e45bb93e26dfb344e3f42": 1,
+        "58d9b3b945b94a6eb56f0ab8535080d1": 18
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "MSK12CO2-SZ",
+          1,
+          "SW-TH_MSK12C02",
+          "SW3",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2681568",
+            "Manufacturer": "SHOU HAN(首韩)",
+            "Manufacturer Part": "MSK12CO2-SZ",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "MSK12CO2-SZ",
+            "puuid": "f66711cfd33f4c908e1bafbce46c9bda",
+            "uuid": "f729e478b955495882e91bc4e02ecf06"
+          }
+        ],
+        [
+          "Flipper Zero",
+          1,
+          "FLIPPER ZERO",
+          "U4",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "theo.digiacomo1",
+            "spiceSymbolName": "Flipper Zero",
+            "puuid": "990b7a3599bd4bb5aaaac27b48d09cc3",
+            "uuid": "4942e9914e2e45bb93e26dfb344e3f42"
+          }
+        ],
+        [
+          "FZ_Pin_Symbol",
+          18,
+          "FLIPPER ZERO PIN FOOTPRINT",
+          "U5,U6,U7,U8,U9,U10,U11,U12,U13,U14,U15,U16,U17,U18,U19,U20,U21,U23",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier": "",
+            "Supplier Part": "",
+            "link": "",
+            "Contributor": "musangi",
+            "spiceSymbolName": "FZ_Pin_Symbol",
+            "puuid": "a43f38fa21d04edbbd8e91ea7996b149",
+            "uuid": "58d9b3b945b94a6eb56f0ab8535080d1"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "CAP-SMD_BD5.0-L5.3-W5.3-FD",
+          "C1",
+          {
+            "Supplier": "LCSC",
+            "Supplier Part": "C4747971",
+            "Manufacturer": "KNSCHA(科尼盛)",
+            "Manufacturer Part": "RST10UF50V016",
+            "JLCPCB Part Class": "Extended Part",
+            "Contributor": "lcsc",
+            "spiceSymbolName": "RST10UF50V016",
+            "puuid": "45fb9552a18349cfbac4f8f3e8af134a",
+            "uuid": "696692d8ef274b0faae78fdfa0f92009"
+          }
+        ],
+        [
+          "MOD-NRF24L01",
+          1,
+          "MOD-NRF24L01-HDR",
+          "U1",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "jackyw1368",
+            "spiceSymbolName": "MOD-NRF24L01",
+            "puuid": "8dcdc8b7788d47c588a4b6342a633384",
+            "uuid": "f418ff9bade247c7b75a2982186fa79a"
+          }
+        ],
+        [
+          "CC1101",
+          1,
+          "CC1101",
+          "U2",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "gabrieln2002",
+            "spiceSymbolName": "CC1101",
+            "puuid": "2dc73fa98c0a46fdb7efa93db81e7ce7",
+            "uuid": "a6d702f379e74da381713a27b0da9d89"
+          }
+        ],
+        [
+          "ESP32 CAM",
+          1,
+          "ESP32-CAM",
+          "U3",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "aliexpress",
+            "link": "",
+            "Contributor": "cempamirbanas",
+            "spiceSymbolName": "ESP32 CAM",
+            "puuid": "fc506e5db8e547b2b2a5aed13168defd",
+            "uuid": "718baa11d6cf4bd982e59cce58cf22b0"
+          }
+        ]
+      ],
+      "updateTime": 1706197248,
+      "createTime": 1706195892,
+      "histories": [],
+      "created_at": "2024-01-25 10:18:12",
+      "updated_at": "2024-01-25 10:40:48"
+    },
+    {
+      "uuid": "c448d4c96db37075399d4751ed54392d",
+      "title": "Sheet_2",
+      "description": "",
+      "docType": "1",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "718baa11d6cf4bd982e59cce58cf22b0": 1,
+        "a6d702f379e74da381713a27b0da9d89": 1,
+        "696692d8ef274b0faae78fdfa0f92009": 1,
+        "f418ff9bade247c7b75a2982186fa79a": 1
+      },
+      "BOM": [
+        [
+          "Value",
+          "Quantity",
+          "Package",
+          "Components",
+          "CustomPara"
+        ],
+        [
+          "MSK12CO2-SZ",
+          1,
+          "SW-TH_MSK12C02",
+          "SW3",
+          {
+            "Contributor": "LCSC",
+            "Supplier": "LCSC",
+            "Supplier Part": "C2681568",
+            "Manufacturer": "SHOU HAN(首韩)",
+            "Manufacturer Part": "MSK12CO2-SZ",
+            "JLCPCB Part Class": "Extended Part",
+            "spiceSymbolName": "MSK12CO2-SZ",
+            "puuid": "f66711cfd33f4c908e1bafbce46c9bda",
+            "uuid": "f729e478b955495882e91bc4e02ecf06"
+          }
+        ],
+        [
+          "Flipper Zero",
+          1,
+          "FLIPPER ZERO",
+          "U4",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "theo.digiacomo1",
+            "spiceSymbolName": "Flipper Zero",
+            "puuid": "990b7a3599bd4bb5aaaac27b48d09cc3",
+            "uuid": "4942e9914e2e45bb93e26dfb344e3f42"
+          }
+        ],
+        [
+          "FZ_Pin_Symbol",
+          18,
+          "FLIPPER ZERO PIN FOOTPRINT",
+          "U5,U6,U7,U8,U9,U10,U11,U12,U13,U14,U15,U16,U17,U18,U19,U20,U21,U23",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier": "",
+            "Supplier Part": "",
+            "link": "",
+            "Contributor": "musangi",
+            "spiceSymbolName": "FZ_Pin_Symbol",
+            "puuid": "a43f38fa21d04edbbd8e91ea7996b149",
+            "uuid": "58d9b3b945b94a6eb56f0ab8535080d1"
+          }
+        ],
+        [
+          "10uF",
+          1,
+          "CAP-SMD_BD5.0-L5.3-W5.3-FD",
+          "C1",
+          {
+            "Supplier": "LCSC",
+            "Supplier Part": "C4747971",
+            "Manufacturer": "KNSCHA(科尼盛)",
+            "Manufacturer Part": "RST10UF50V016",
+            "JLCPCB Part Class": "Extended Part",
+            "Contributor": "lcsc",
+            "spiceSymbolName": "RST10UF50V016",
+            "puuid": "45fb9552a18349cfbac4f8f3e8af134a",
+            "uuid": "696692d8ef274b0faae78fdfa0f92009"
+          }
+        ],
+        [
+          "MOD-NRF24L01",
+          1,
+          "MOD-NRF24L01-HDR",
+          "U1",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "jackyw1368",
+            "spiceSymbolName": "MOD-NRF24L01",
+            "puuid": "8dcdc8b7788d47c588a4b6342a633384",
+            "uuid": "f418ff9bade247c7b75a2982186fa79a"
+          }
+        ],
+        [
+          "CC1101",
+          1,
+          "CC1101",
+          "U2",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "",
+            "link": "",
+            "Contributor": "gabrieln2002",
+            "spiceSymbolName": "CC1101",
+            "puuid": "2dc73fa98c0a46fdb7efa93db81e7ce7",
+            "uuid": "a6d702f379e74da381713a27b0da9d89"
+          }
+        ],
+        [
+          "ESP32 CAM",
+          1,
+          "ESP32-CAM",
+          "U3",
+          {
+            "Manufacturer": "",
+            "Manufacturer Part": "",
+            "Supplier Part": "",
+            "Supplier": "aliexpress",
+            "link": "",
+            "Contributor": "cempamirbanas",
+            "spiceSymbolName": "ESP32 CAM",
+            "puuid": "fc506e5db8e547b2b2a5aed13168defd",
+            "uuid": "718baa11d6cf4bd982e59cce58cf22b0"
+          }
+        ]
+      ],
+      "updateTime": 1706197248,
+      "createTime": 1706195892,
+      "histories": [],
+      "created_at": "2024-01-25 10:18:12",
+      "updated_at": "2024-01-25 10:40:48"
+    },
+    {
+      "uuid": "6b3410935dca8ef014a2134eaa02e245",
+      "puuid": "6ea56f65c900ac6c51acf2068fae781c",
+      "title": "PCB_PCB_Flipper Zero Hat(ESP32 Cam)_2024-01-25",
+      "filename": "PCB_PCB_Flipper Zero Hat(ESP32 Cam)_2024-01-25.json",
+      "description": "",
+      "docType": "3",
+      "master": "",
+      "thumb": "/images/thumb-default.png",
+      "components": {
+        "990b7a3599bd4bb5aaaac27b48d09cc3": 1,
+        "a43f38fa21d04edbbd8e91ea7996b149": 36,
+        "45fb9552a18349cfbac4f8f3e8af134a": 1,
+        "f66711cfd33f4c908e1bafbce46c9bda": 1,
+        "8dcdc8b7788d47c588a4b6342a633384": 1,
+        "2dc73fa98c0a46fdb7efa93db81e7ce7": 1,
+        "fc506e5db8e547b2b2a5aed13168defd": 1
+      },
+      "BOM": [],
+      "updateTime": 1706195704,
+      "createTime": 1706195704,
+      "histories": [],
+      "created_at": "2024-01-25 10:15:04",
+      "updated_at": "2024-01-25 10:15:04"
+    }
+  ],
+  "sort": [
+    "cf550090f60c6122156251c019abd516",
+    "c448d4c96db37075399d4751ed54392d"
+  ],
+  "title": "hat",
+  "foldername": "hat",
+  "schfilename": "hat.json",
+  "schfilemtime": 1706197248142
+}

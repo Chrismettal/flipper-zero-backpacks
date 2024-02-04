@@ -30,6 +30,7 @@ Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores
     - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
   - [Raspberry Pi Zero W](#raspberry-pi-zero-w)
+  - [Taylor Stahl - Mayhem](#taylor-stahl---mayhem)
 - [Making your own](#making-your-own)
 - [3D Printing](#3d-printing)
 - [Building guide](#building-guide)
@@ -97,6 +98,16 @@ Additionally, the board includes a `PCF8523` realtime clock so your Pwnagotchi a
 To set up the Realtime clock, you can follow the guide on the [Pwnagotchi docs](https://pwnagotchi.ai/configuration/#connecting-to-pi0w-with-microusb-cable-on-linux-host) as well as [Adafruit](https://learn.adafruit.com/adding-a-real-time-clock-to-raspberry-pi/set-rtc-time).
 
 If you don't want to connect your pwnagotchi to the internet, you can always set its time with `'sudo date -s 'YYYY-MM-DD HH:MM:SS'` , before writing the Raspberry's time the RTC with `sudo hwclock -w`
+
+### Taylor Stahl - Mayhem
+
+![Mayhem](/img/TaylorStahlsMayhem.png)
+
+This is a [Flipper Zero Mayhem](https://github.com/eried/flipperzero-mayhem) backpack created by [Taylor Stahls](taylor.stahls@gmail.com) done with EasyEDA.
+
+It uses the same backpack connector as the other boards found here to implement an ESP32-CAM, CC1101 and NRF24 in a backpack format. A switch was added to choose between the CC1101 and the NRF24 being active.
+
+I personally haven't yet played around with this board, as Taylor merely asked me to add his board to this repo to respect the original license. Taylor is currently setting up his own Tindie shop to sell his Mayhem boards eventually. Link to be added once public.
 
 ## Making your own
 
