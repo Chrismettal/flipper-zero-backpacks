@@ -14,6 +14,10 @@
 
 ## BOM
 
+These BOMs are for assembling a finished backpack and are to be seen additional to the PCBA BOMs in the respective pcb folder. These BOMs will not include any parts that are placed on the board by the PCB fabhouse.
+
+This list is also what you would get, if you were to buy a kit through [Tindie](https://www.tindie.com/stores/binary-6/).
+
 ### Bare / Prototype
 
 | Name                        | Part number  | Amount | Link                                                                                                                                                    |
@@ -190,6 +194,62 @@ You should now see clean connections between both sides of the board. You can no
 ### ESP32
 
 I recommend using [FZEasyMarauderFlash](https://github.com/SkeletonMan03/FZEasyMarauderFlash) for this. It allows you to flash either the BlackMagic Firmware that Flipper itself ships with their Devboards, as well as Marauder or Evil Portal.
+
+Instructions are done using a fresh Arch install.
+
+1. Make sure you have git python and pip installed:
+
+`sudo pacman -S --needed python python-pip git`
+
+2. Add your current user to the `uucp` group (sometimes `dialout` on other OSes)
+
+`sudo usermod -a -G uucp $USER`
+
+3. Download appropriate UDEV rules (Grabbing from Platformio for convenience)
+
+`curl -fsSL https://raw.githubusercontent.com/platformio/platformio-core/develop/platformio/assets/system/99-platformio-udev.rules | sudo tee /etc/udev/rules.d/99-platformio-udev.rules`
+
+You might need to reboot afterwards as manually reloading rules and triggering doesn't always work with `EasyInstall.py`
+
+4. Clone the FZEasyMarauderFlash repo
+
+`git clone https://github.com/SkeletonMan03/FZEasyMarauderFlash`
+
+5. Change directory into the cloned repo
+
+`cd FZEasyMarauderFlash`
+
+6. Install required dependencies (With the override for ease of use. Doing this in a VM anyways.)
+
+`pip install -r requirements.txt --break-system-packages`
+
+7. Execute `EasyInstall.py`, which will download the binaries on first launch
+
+`python ./EasyInstall.py`
+
+You should be greeted with the following selection screen:
+
+![Easy Flash start screen](FZEasyMarauderFlashStart.png)
+
+8. At this point, hold down the `BOOT` button on your ESP32 board and plug the board into your Computer using a USB-C cable
+
+9. Select the firmware you wish to install. For Marauder, choose `1`, for Black magic, choose `3`, and for Evil Portal, choose `15`. In this example, we're gonna install Marauder with `1`
+
+![Choose1](Choose1.png)
+
+10. This will take a few seconds. After the flash is complete you'll get the following confirmation:
+
+![FlashComplete](FlashComplete.png)
+
+11. Pressing the `RESET` button on the backpack at this point will make the board restart with the new firmware. Marauder will confirm successful installation by blinking the LED briefly in White, Yellow, Red, before shutting the LED off.
+
+12. Inserting the board into your Flipper, you can test the functionality by opening the Wifi Marauder app (Present in Unleashed firmware or similar) and executing a simple AP scan
+
+![StartApp](StartApp.png)
+
+![ScanAP](ScanAP.png)
+
+![ScannedAP](ScannedAP.png)
 
 ### Raspberry
 
