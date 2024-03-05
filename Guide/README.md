@@ -33,7 +33,7 @@
 | Connecting-piece PCB                          | N/A          | 1      | [PCB](/pcb/Connecting-piece/FabricationOutputs/Connecting-piece_Gerb.zip)                                                                               |
 | 8 x 2.54mm pin header                         | N/A          | 1      | N/A                                                                                                                                                     |
 | 10 x 2.54mm pin header                        | N/A          | 1      | N/A                                                                                                                                                     |
-| 3D printed case                               | N/A          | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf.3mf)                                                                                                      |
+| 3D printed case                               | N/A          | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf)                                                                                                          |
 | M2 x 5mm self tapping screw                   | GB2670.2 5mm | 3      | [M2 x 5 noname screws](https://de.aliexpress.com/item/1005004325435136.html?spm=a2g0o.order_list.order_list_main.5.12bb5c5fFvie6I&gatewayAdapt=glo2deu) |
 
 ### ESP32 External Antenna
@@ -44,7 +44,7 @@
 | Connecting-piece PCB                            | N/A          | 1      | [PCB](/pcb/Connecting-piece/FabricationOutputs/Connecting-piece_Gerb.zip)                                                                               |
 | 8 x 2.54mm pin header                           | N/A          | 1      | N/A                                                                                                                                                     |
 | 10 x 2.54mm pin header                          | N/A          | 1      | N/A                                                                                                                                                     |
-| 3D printed case                                 | N/A          | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf.3mf)                                                                                                      |
+| 3D printed case                                 | N/A          | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf)                                                                                                          |
 | M2 x 5mm self tapping screw                     | GB2670.2 5mm | 3      | [M2 x 5 noname screws](https://de.aliexpress.com/item/1005004325435136.html?spm=a2g0o.order_list.order_list_main.5.12bb5c5fFvie6I&gatewayAdapt=glo2deu) |
 | 2.4GHz Wifi Antenna with IPX to RP-SMA cable    | N/A          | 1      | [Noname Antenna](https://de.aliexpress.com/item/1005003489327360.html?spm=a2g0o.order_list.order_list_main.11.12bb5c5fFvie6I&gatewayAdapt=glo2deu)      |
 
@@ -57,10 +57,10 @@
 | 8 x 2.54mm pin header                | N/A             | 1      | N/A                                                                                                                                                     |
 | 10 x 2.54mm pin header               | N/A             | 1      | N/A                                                                                                                                                     |
 | Raspberry Pi Zero W                  | RPD08818W       | 1      | [Elecrow Rpi Zero W](https://www.elecrow.com/raspberry-pi-zero-w.html)                                                                                  |
-| 3D printed case                      | N/A             | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf.3mf)                                                                                                      |
+| 3D printed case                      | N/A             | 1      | [Case](/3d_printing/ESP32_InternalAntenna.3mf)                                                                                                          |
 | M2 x 5mm self tapping screw          | GB2670.2 5mm    | 3      | [M2 x 5 noname screws](https://de.aliexpress.com/item/1005004325435136.html?spm=a2g0o.order_list.order_list_main.5.12bb5c5fFvie6I&gatewayAdapt=glo2deu) |
-| M2.5 Hexagon Nut                     | DIN-EN-ISO 4032 | 2      | [Norm](https://www.fasteners.eu/standards/ISO/4032/)                                                                                                                                                     |
-| M2.5 x 6mm countersunk machine screw | ISO 14581       | 2      | [Norm](https://www.fasteners.eu/standards/ISO/14581/)                                                                                                                                                        |
+| M2.5 Hexagon Nut                     | DIN-EN-ISO 4032 | 2      | [Norm](https://www.fasteners.eu/standards/ISO/4032/)                                                                                                    |
+| M2.5 x 6mm countersunk machine screw | ISO 14581       | 2      | [Norm](https://www.fasteners.eu/standards/ISO/14581/)                                                                                                   |
 | CR927 (3V) Battery                   | N/A             | 1      | N/A                                                                                                                                                     |
 
 ## 3D printing
