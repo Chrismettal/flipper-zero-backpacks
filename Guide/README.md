@@ -10,7 +10,6 @@
 - [Raspberry Pi specific subassembly](#raspberry-pi-specific-subassembly)
 - [Firmware flash](#firmware-flash)
     - [ESP32](#esp32)
-    - [Raspberry](#raspberry)
 
 ## BOM
 
@@ -250,7 +249,3 @@ You should be greeted with the following selection screen:
 ![ScanAP](ScanAP.png)
 
 ![ScannedAP](ScannedAP.png)
-
-### Raspberry
-
-TBD
