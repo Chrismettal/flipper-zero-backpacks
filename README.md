@@ -12,11 +12,14 @@ Right now it features only an ESP32 wifi board, like the official wifi devboard,
 
 The backpack framework is designed to fit snugly to a Flipper inside its silicone case. Without a silicone sleeve, the board will have 2mm of space around the Flipper, which might be undesireable.
 
-![FrontNoFlipper](img/FrontNoFlipper.png)
+![FrontNoFlipper](/img/FrontNoFlipper.png)
 
 Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores/binary-6/).
 
-<a href="https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium"><img src="https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png" alt="I sell on Tindie" width="150" height="78"></a>
+I'm also working with [Elecrow](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html) to get my products stocked there!
+
+
+[![ElecrowBadge](/img/Elecrow.png)](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html)
 
 **If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
 
@@ -52,6 +55,8 @@ The addon board and the connecting piece slide into each other and get soldered 
 ### ESP32 Wifi Dev board
 
 ![Wifi](img/NiceBack.jpg)
+
+[**Buy on Elecrow**](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html)
 
 Very similar to the [official Wifi dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard). Additionally includes a micro SD card slot so you don't have to mod the official board yourself. 
 
