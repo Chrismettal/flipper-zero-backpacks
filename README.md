@@ -1,7 +1,7 @@
 # Flipper Zero Backpacks <!-- omit in toc -->
 
 [![License: CC BY-SA 4.0](https://img.shields.io/badge/license-CC%20BY--SA%204.0-blue?style=flat-square)](https://creativecommons.org/licenses/by-sa/4.0/)
-[![Shop: Tindie](https://img.shields.io/badge/shop-Tindie-blue?style=flat-square)](https://www.tindie.com/stores/binary-6/?ref=offsite_badges&utm_source=sellers_Chrismettal&utm_medium=badges&utm_campaign=badge_medium)
+[![Shop: Elecrow](https://img.shields.io/badge/shop-Elecrow-blue?style=flat-square)](https://www.elecrow.com/store/Binary-6)
 [![Donations: Coffee](https://img.shields.io/badge/donations-Coffee-brown?style=flat-square)](https://github.com/Chrismettal#donations)
 
 ![NiceBack](/img/NiceBack.jpg)
@@ -14,12 +14,9 @@ The backpack framework is designed to fit snugly to a Flipper inside its silicon
 
 ![FrontNoFlipper](/img/FrontNoFlipper.png)
 
-Finished designs are currently stocked at [Tindie](https://www.tindie.com/stores/binary-6/).
+Finished boards are currently stocked at [Elecrow](https://www.elecrow.com/store/Binary-6).
 
-I'm also working with [Elecrow](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html) to get my products stocked there!
-
-
-[![ElecrowBadge](/img/Elecrow.png)](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html)
+[![ElecrowBadge](/img/Elecrow.png)](https://www.elecrow.com/store/Binary-6)
 
 **If you like my work please consider [supporting my caffeine addiction](https://github.com/Chrismettal#donations)!**
 
