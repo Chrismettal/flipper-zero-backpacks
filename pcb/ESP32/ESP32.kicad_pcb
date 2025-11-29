@@ -19466,8 +19466,8 @@
 			)
 		)
 	)
-	(gr_text "Flipper Zero \nESP32 Backpack\nChrismettal - 2023"
-		(at 153.289 103.062 0)
+	(gr_text "Flipper Zero \nESP32 MINI Backpack\nChrismettal - 2025"
+		(at 152.146 102.997 0)
 		(layer "F.SilkS")
 		(uuid "caf75fec-dd8c-4433-ba40-50041eb5239e")
 		(effects
@@ -25408,20 +25408,20 @@
 		(uuid "791ef2c5-32cf-4218-a937-2f9256b5bd9f")
 	)
 	(segment
-		(start 154.0248 104.89)
-		(end 150.271 104.89)
-		(width 0.254)
-		(layer "B.Cu")
-		(net 29)
-		(uuid "b72a1338-0ffb-48f1-85d8-581381ea71dd")
-	)
-	(segment
 		(start 132.972048 121.581)
 		(end 133.274868 121.88382)
 		(width 0.254)
 		(layer "B.Cu")
 		(net 29)
 		(uuid "beca37a7-ef2c-402e-8ac8-e29f2d944574")
+	)
+	(segment
+		(start 150.271 104.89)
+		(end 154.0248 104.89)
+		(width 0.254)
+		(layer "B.Cu")
+		(net 29)
+		(uuid "d62ff23f-1562-448a-ad54-3996c0753df0")
 	)
 	(segment
 		(start 120.9 125)
