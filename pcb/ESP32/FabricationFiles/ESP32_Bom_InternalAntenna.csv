@@ -18,5 +18,5 @@ Comment,Designator,Footprint,LCSC
 "10k","R9,R11,R14","Resistor_SMD:R_0603_1608Metric","C25804"
 "Reset","SW1","Button_Switch_SMD:SW_SPST_TL3342","C318884"
 "Boot","SW2","Button_Switch_SMD:SW_SPST_TL3342","C318884"
-"ESP32-S2-WROVER","U1","RF_Module:ESP32-S2-WROVER","C701333"
+"ESP32-S2-MINI-2","U3","RF_Module:ESP32-S2-MINI-2","C3013906"
 "AMS1117-3.3","U2","Package_TO_SOT_SMD:SOT-223-3_TabPin2","C6186"

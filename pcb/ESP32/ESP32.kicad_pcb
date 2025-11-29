@@ -92,7 +92,7 @@
 		(tenting none)
 		(aux_axis_origin 103.505 87.187)
 		(pcbplotparams
-			(layerselection 0x00000000_00000000_55555555_5755f5ff)
+			(layerselection 0x00000000_00000000_5555555f_5755f5ff)
 			(plot_on_all_layers_selection 0x00000000_00000000_00000000_00000000)
 			(disableapertmacros no)
 			(usegerberextensions yes)
@@ -19322,7 +19322,7 @@
 			)
 		)
 	)
-	(gr_text "9147eb9"
+	(gr_text "36f077e"
 		(at 126.238 92.71 0)
 		(layer "F.SilkS")
 		(uuid "70a65a3b-2fbb-4404-b470-f830c83c39ef")
