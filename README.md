@@ -26,7 +26,7 @@ Finished boards are currently stocked at [Elecrow](https://www.elecrow.com/store
   - [Connecting piece](#connecting-piece)
   - [ESP32 Wifi Dev board](#esp32-wifi-dev-board)
     - [Firmware](#firmware)
-    - [Internal / External Antenna](#internal--external-antenna)
+    - [Internal/External antenna](#internalexternal-antenna)
     - [SD Card](#sd-card)
   - [Protoboard](#protoboard)
   - [Raspberry Pi Zero W](#raspberry-pi-zero-w)
@@ -53,9 +53,11 @@ The addon board and the connecting piece slide into each other and get soldered 
 
 ![Wifi](img/NiceBack.jpg)
 
-[**Buy on Elecrow**](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32.html)
+[**Buy on Elecrow**](https://www.elecrow.com/flipper-zero-wifi-backpack-esp32-s2-mini-new-ic.html)
 
 Very similar to the [official Wifi dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard). Additionally includes a micro SD card slot so you don't have to mod the official board yourself. 
+
+The board has been modified to accomodate the `ESP32-S2-MINI-2` version of the ESP32 modules, as the original `WROVER` variant has become unavailable. Internally the IC is mostly identical.
 
 Other than that all guides applicable to the official Wifi dev board are also applicable here.
 
@@ -67,15 +69,11 @@ The board ships with the [Black Magic debugger firmware](https://black-magic.org
 
 **Every firmware that works on the [official dev board](https://shop.flipperzero.one/collections/flipper-zero-accessories/products/wifi-devboard) should also work on this backpack**
 
-#### Internal / External Antenna
+#### Internal/External antenna
 
-The ESP32-S2 part number referenced in the BOM ([C701334](https://www.lcsc.com/product-detail/WiFi-Modules_Espressif-Systems-ESP32-S2-WROVER-I-N4R2_C701334.html)) leads to an `-I` version of the ESP32-S2, which has the antenna plug mounted on the ESP. Versions without the `-I` in the product name do not have the antenna plug mounted. Next to the antenna plug is a small jumper that is set accordingly, to use either the internal PCB antenna, or the external plug antenna.
+Previous versions of this board used the `WROVER` variant of the ESP32, which offered internal and external antenna options on the same module by flipping a jumper. As this chip has become unavailable, the board has been redesigned for the `ESP32-S2-MINI-2`, which at first is internal-antenna-only. To use an external antenna, the `ESP32-S2-MINI-2` would need to be mounted. 
 
-By default, `-I` ESPs have the jumper set to use an external antenna via the plug. 
-
-**If you use a non `-I` variant of the ESP32-S2, like the boards found in the shop, you would have to mount an antenna plug before being able to use the external antenna**
-
-**if you use an `-I` ESP32-S2 you would need to move the jumper over to use the internal antenna!**
+![ESP32 MINI vs MINI U](/img/MiniU.png)
 
 #### SD Card
 
